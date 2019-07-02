@@ -1,0 +1,32 @@
+* README
+** TODO convert the index files
+** Canonical sequences
+   * come from CARD website
+   * comes in a simple fasta format
+   * converted directly to an index
+   * and fasta with unique integers like lcl|canon|12
+** Prevalence Sequences
+   * come from CARD website protein homolog file
+   * fasta format similar to Canonical sequences
+# nope   * grep for the relevant protein to new fasta
+   * first makeblastdb the fasta
+   * blast the new db
+   * convert the blast results to unique taking the max length sequence from
+     each identical query
+   * blast file serves as index for
+   * extract fasta from those blast results
+** Non-redundant NCBI sequences
+   * come from ncbi as an existing blast database
+   * blast this from the references
+   * convert the blast results to unique taking the max length sequence from
+   * blast file serves as index for
+   * extract fasta from those blast results
+** UBAs
+   * come from rgi-card output
+   * are in seperate text files
+   * make an index from the raw txt files
+   * make a fasta from that
+   * blastdb that fasta
+   * blast that db
+   * make unique the blast
+   * extract the fasta
