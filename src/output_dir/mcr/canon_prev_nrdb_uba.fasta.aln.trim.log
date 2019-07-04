@@ -1,0 +1,1672 @@
+IQ-TREE multicore version 1.6.9 for Linux 64-bit built Jan  2 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    halifax (AVX2, FMA3, 61 GB RAM)
+Command: iqtree -s canon_prev_nrdb_uba.fasta.aln.trim -bb 1000
+Seed:    721990 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jul  3 22:09:44 2019
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file canon_prev_nrdb_uba.fasta.aln.trim ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 735 sequences with 452 columns, 424 distinct patterns
+396 parsimony-informative, 10 singleton sites, 46 constant sites
+WARNING: Some sequence names are changed as follows:
+lcl|canon|1 -> lcl_canon_1
+lcl|canon|2 -> lcl_canon_2
+lcl|canon|3 -> lcl_canon_3
+lcl|canon|4 -> lcl_canon_4
+lcl|canon|5 -> lcl_canon_5
+lcl|canon|6 -> lcl_canon_6
+lcl|canon|7 -> lcl_canon_7
+lcl|canon|8 -> lcl_canon_8
+lcl|canon|9 -> lcl_canon_9
+lcl|canon|10 -> lcl_canon_10
+lcl|canon|11 -> lcl_canon_11
+lcl|canon|12 -> lcl_canon_12
+lcl|canon|13 -> lcl_canon_13
+lcl|canon|14 -> lcl_canon_14
+lcl|canon|15 -> lcl_canon_15
+lcl|canon|16 -> lcl_canon_16
+lcl|canon|17 -> lcl_canon_17
+lcl|canon|18 -> lcl_canon_18
+lcl|canon|19 -> lcl_canon_19
+lcl|canon|20 -> lcl_canon_20
+lcl|canon|21 -> lcl_canon_21
+lcl|canon|22 -> lcl_canon_22
+lcl|canon|23 -> lcl_canon_23
+lcl|prev|1 -> lcl_prev_1
+lcl|prev|14 -> lcl_prev_14
+lcl|prev|21 -> lcl_prev_21
+lcl|prev|35 -> lcl_prev_35
+lcl|prev|86 -> lcl_prev_86
+lcl|prev|91 -> lcl_prev_91
+lcl|prev|94 -> lcl_prev_94
+lcl|nrdb|1 -> lcl_nrdb_1
+lcl|nrdb|2 -> lcl_nrdb_2
+lcl|nrdb|3 -> lcl_nrdb_3
+lcl|nrdb|4 -> lcl_nrdb_4
+lcl|nrdb|5 -> lcl_nrdb_5
+lcl|nrdb|6 -> lcl_nrdb_6
+lcl|nrdb|7 -> lcl_nrdb_7
+lcl|nrdb|8 -> lcl_nrdb_8
+lcl|nrdb|9 -> lcl_nrdb_9
+lcl|nrdb|10 -> lcl_nrdb_10
+lcl|nrdb|11 -> lcl_nrdb_11
+lcl|nrdb|12 -> lcl_nrdb_12
+lcl|nrdb|13 -> lcl_nrdb_13
+lcl|nrdb|14 -> lcl_nrdb_14
+lcl|nrdb|15 -> lcl_nrdb_15
+lcl|nrdb|16 -> lcl_nrdb_16
+lcl|nrdb|17 -> lcl_nrdb_17
+lcl|nrdb|18 -> lcl_nrdb_18
+lcl|nrdb|19 -> lcl_nrdb_19
+lcl|nrdb|20 -> lcl_nrdb_20
+lcl|nrdb|21 -> lcl_nrdb_21
+lcl|nrdb|22 -> lcl_nrdb_22
+lcl|nrdb|23 -> lcl_nrdb_23
+lcl|nrdb|24 -> lcl_nrdb_24
+lcl|nrdb|25 -> lcl_nrdb_25
+lcl|nrdb|26 -> lcl_nrdb_26
+lcl|nrdb|27 -> lcl_nrdb_27
+lcl|nrdb|28 -> lcl_nrdb_28
+lcl|nrdb|29 -> lcl_nrdb_29
+lcl|nrdb|30 -> lcl_nrdb_30
+lcl|nrdb|31 -> lcl_nrdb_31
+lcl|nrdb|32 -> lcl_nrdb_32
+lcl|nrdb|33 -> lcl_nrdb_33
+lcl|nrdb|34 -> lcl_nrdb_34
+lcl|nrdb|35 -> lcl_nrdb_35
+lcl|nrdb|36 -> lcl_nrdb_36
+lcl|nrdb|37 -> lcl_nrdb_37
+lcl|nrdb|38 -> lcl_nrdb_38
+lcl|nrdb|39 -> lcl_nrdb_39
+lcl|nrdb|40 -> lcl_nrdb_40
+lcl|nrdb|41 -> lcl_nrdb_41
+lcl|nrdb|42 -> lcl_nrdb_42
+lcl|nrdb|43 -> lcl_nrdb_43
+lcl|nrdb|44 -> lcl_nrdb_44
+lcl|nrdb|45 -> lcl_nrdb_45
+lcl|nrdb|46 -> lcl_nrdb_46
+lcl|nrdb|47 -> lcl_nrdb_47
+lcl|nrdb|48 -> lcl_nrdb_48
+lcl|nrdb|49 -> lcl_nrdb_49
+lcl|nrdb|50 -> lcl_nrdb_50
+lcl|nrdb|51 -> lcl_nrdb_51
+lcl|nrdb|52 -> lcl_nrdb_52
+lcl|nrdb|53 -> lcl_nrdb_53
+lcl|nrdb|54 -> lcl_nrdb_54
+lcl|nrdb|55 -> lcl_nrdb_55
+lcl|nrdb|56 -> lcl_nrdb_56
+lcl|nrdb|57 -> lcl_nrdb_57
+lcl|nrdb|58 -> lcl_nrdb_58
+lcl|nrdb|59 -> lcl_nrdb_59
+lcl|nrdb|60 -> lcl_nrdb_60
+lcl|nrdb|61 -> lcl_nrdb_61
+lcl|nrdb|62 -> lcl_nrdb_62
+lcl|nrdb|63 -> lcl_nrdb_63
+lcl|nrdb|64 -> lcl_nrdb_64
+lcl|nrdb|65 -> lcl_nrdb_65
+lcl|nrdb|66 -> lcl_nrdb_66
+lcl|nrdb|67 -> lcl_nrdb_67
+lcl|nrdb|68 -> lcl_nrdb_68
+lcl|nrdb|69 -> lcl_nrdb_69
+lcl|nrdb|70 -> lcl_nrdb_70
+lcl|nrdb|71 -> lcl_nrdb_71
+lcl|nrdb|72 -> lcl_nrdb_72
+lcl|nrdb|73 -> lcl_nrdb_73
+lcl|nrdb|74 -> lcl_nrdb_74
+lcl|nrdb|75 -> lcl_nrdb_75
+lcl|nrdb|76 -> lcl_nrdb_76
+lcl|nrdb|77 -> lcl_nrdb_77
+lcl|nrdb|78 -> lcl_nrdb_78
+lcl|nrdb|79 -> lcl_nrdb_79
+lcl|nrdb|80 -> lcl_nrdb_80
+lcl|nrdb|81 -> lcl_nrdb_81
+lcl|nrdb|82 -> lcl_nrdb_82
+lcl|nrdb|83 -> lcl_nrdb_83
+lcl|nrdb|84 -> lcl_nrdb_84
+lcl|nrdb|85 -> lcl_nrdb_85
+lcl|nrdb|86 -> lcl_nrdb_86
+lcl|nrdb|87 -> lcl_nrdb_87
+lcl|nrdb|88 -> lcl_nrdb_88
+lcl|nrdb|89 -> lcl_nrdb_89
+lcl|nrdb|90 -> lcl_nrdb_90
+lcl|nrdb|91 -> lcl_nrdb_91
+lcl|nrdb|92 -> lcl_nrdb_92
+lcl|nrdb|93 -> lcl_nrdb_93
+lcl|nrdb|94 -> lcl_nrdb_94
+lcl|nrdb|95 -> lcl_nrdb_95
+lcl|nrdb|96 -> lcl_nrdb_96
+lcl|nrdb|97 -> lcl_nrdb_97
+lcl|nrdb|98 -> lcl_nrdb_98
+lcl|nrdb|99 -> lcl_nrdb_99
+lcl|nrdb|100 -> lcl_nrdb_100
+lcl|nrdb|101 -> lcl_nrdb_101
+lcl|nrdb|102 -> lcl_nrdb_102
+lcl|nrdb|103 -> lcl_nrdb_103
+lcl|nrdb|104 -> lcl_nrdb_104
+lcl|nrdb|105 -> lcl_nrdb_105
+lcl|nrdb|106 -> lcl_nrdb_106
+lcl|nrdb|107 -> lcl_nrdb_107
+lcl|nrdb|108 -> lcl_nrdb_108
+lcl|nrdb|109 -> lcl_nrdb_109
+lcl|nrdb|110 -> lcl_nrdb_110
+lcl|nrdb|111 -> lcl_nrdb_111
+lcl|nrdb|112 -> lcl_nrdb_112
+lcl|nrdb|113 -> lcl_nrdb_113
+lcl|nrdb|114 -> lcl_nrdb_114
+lcl|nrdb|115 -> lcl_nrdb_115
+lcl|nrdb|116 -> lcl_nrdb_116
+lcl|nrdb|117 -> lcl_nrdb_117
+lcl|nrdb|118 -> lcl_nrdb_118
+lcl|nrdb|119 -> lcl_nrdb_119
+lcl|nrdb|120 -> lcl_nrdb_120
+lcl|nrdb|121 -> lcl_nrdb_121
+lcl|nrdb|122 -> lcl_nrdb_122
+lcl|nrdb|123 -> lcl_nrdb_123
+lcl|nrdb|124 -> lcl_nrdb_124
+lcl|nrdb|125 -> lcl_nrdb_125
+lcl|nrdb|126 -> lcl_nrdb_126
+lcl|nrdb|127 -> lcl_nrdb_127
+lcl|nrdb|128 -> lcl_nrdb_128
+lcl|nrdb|129 -> lcl_nrdb_129
+lcl|nrdb|130 -> lcl_nrdb_130
+lcl|nrdb|131 -> lcl_nrdb_131
+lcl|nrdb|132 -> lcl_nrdb_132
+lcl|nrdb|133 -> lcl_nrdb_133
+lcl|nrdb|134 -> lcl_nrdb_134
+lcl|nrdb|135 -> lcl_nrdb_135
+lcl|nrdb|136 -> lcl_nrdb_136
+lcl|nrdb|137 -> lcl_nrdb_137
+lcl|nrdb|138 -> lcl_nrdb_138
+lcl|nrdb|139 -> lcl_nrdb_139
+lcl|nrdb|140 -> lcl_nrdb_140
+lcl|nrdb|141 -> lcl_nrdb_141
+lcl|nrdb|142 -> lcl_nrdb_142
+lcl|nrdb|143 -> lcl_nrdb_143
+lcl|nrdb|144 -> lcl_nrdb_144
+lcl|nrdb|145 -> lcl_nrdb_145
+lcl|nrdb|146 -> lcl_nrdb_146
+lcl|nrdb|147 -> lcl_nrdb_147
+lcl|nrdb|148 -> lcl_nrdb_148
+lcl|nrdb|149 -> lcl_nrdb_149
+lcl|nrdb|150 -> lcl_nrdb_150
+lcl|nrdb|151 -> lcl_nrdb_151
+lcl|nrdb|152 -> lcl_nrdb_152
+lcl|nrdb|153 -> lcl_nrdb_153
+lcl|nrdb|154 -> lcl_nrdb_154
+lcl|nrdb|155 -> lcl_nrdb_155
+lcl|nrdb|156 -> lcl_nrdb_156
+lcl|nrdb|157 -> lcl_nrdb_157
+lcl|nrdb|158 -> lcl_nrdb_158
+lcl|nrdb|159 -> lcl_nrdb_159
+lcl|nrdb|160 -> lcl_nrdb_160
+lcl|nrdb|161 -> lcl_nrdb_161
+lcl|nrdb|162 -> lcl_nrdb_162
+lcl|nrdb|163 -> lcl_nrdb_163
+lcl|nrdb|164 -> lcl_nrdb_164
+lcl|nrdb|165 -> lcl_nrdb_165
+lcl|nrdb|166 -> lcl_nrdb_166
+lcl|nrdb|167 -> lcl_nrdb_167
+lcl|nrdb|168 -> lcl_nrdb_168
+lcl|nrdb|169 -> lcl_nrdb_169
+lcl|nrdb|170 -> lcl_nrdb_170
+lcl|nrdb|171 -> lcl_nrdb_171
+lcl|nrdb|172 -> lcl_nrdb_172
+lcl|nrdb|173 -> lcl_nrdb_173
+lcl|nrdb|174 -> lcl_nrdb_174
+lcl|nrdb|175 -> lcl_nrdb_175
+lcl|nrdb|176 -> lcl_nrdb_176
+lcl|nrdb|177 -> lcl_nrdb_177
+lcl|nrdb|178 -> lcl_nrdb_178
+lcl|nrdb|179 -> lcl_nrdb_179
+lcl|nrdb|180 -> lcl_nrdb_180
+lcl|nrdb|181 -> lcl_nrdb_181
+lcl|nrdb|182 -> lcl_nrdb_182
+lcl|nrdb|183 -> lcl_nrdb_183
+lcl|nrdb|184 -> lcl_nrdb_184
+lcl|nrdb|185 -> lcl_nrdb_185
+lcl|nrdb|186 -> lcl_nrdb_186
+lcl|nrdb|187 -> lcl_nrdb_187
+lcl|nrdb|188 -> lcl_nrdb_188
+lcl|nrdb|189 -> lcl_nrdb_189
+lcl|nrdb|190 -> lcl_nrdb_190
+lcl|nrdb|191 -> lcl_nrdb_191
+lcl|nrdb|192 -> lcl_nrdb_192
+lcl|nrdb|193 -> lcl_nrdb_193
+lcl|nrdb|194 -> lcl_nrdb_194
+lcl|nrdb|195 -> lcl_nrdb_195
+lcl|nrdb|196 -> lcl_nrdb_196
+lcl|nrdb|197 -> lcl_nrdb_197
+lcl|nrdb|198 -> lcl_nrdb_198
+lcl|nrdb|199 -> lcl_nrdb_199
+lcl|nrdb|200 -> lcl_nrdb_200
+lcl|nrdb|201 -> lcl_nrdb_201
+lcl|nrdb|202 -> lcl_nrdb_202
+lcl|nrdb|203 -> lcl_nrdb_203
+lcl|nrdb|204 -> lcl_nrdb_204
+lcl|nrdb|205 -> lcl_nrdb_205
+lcl|nrdb|206 -> lcl_nrdb_206
+lcl|nrdb|207 -> lcl_nrdb_207
+lcl|nrdb|208 -> lcl_nrdb_208
+lcl|nrdb|209 -> lcl_nrdb_209
+lcl|nrdb|210 -> lcl_nrdb_210
+lcl|nrdb|211 -> lcl_nrdb_211
+lcl|nrdb|212 -> lcl_nrdb_212
+lcl|nrdb|213 -> lcl_nrdb_213
+lcl|nrdb|214 -> lcl_nrdb_214
+lcl|nrdb|215 -> lcl_nrdb_215
+lcl|nrdb|216 -> lcl_nrdb_216
+lcl|nrdb|217 -> lcl_nrdb_217
+lcl|nrdb|218 -> lcl_nrdb_218
+lcl|nrdb|219 -> lcl_nrdb_219
+lcl|nrdb|220 -> lcl_nrdb_220
+lcl|nrdb|221 -> lcl_nrdb_221
+lcl|nrdb|222 -> lcl_nrdb_222
+lcl|nrdb|223 -> lcl_nrdb_223
+lcl|nrdb|224 -> lcl_nrdb_224
+lcl|nrdb|225 -> lcl_nrdb_225
+lcl|nrdb|226 -> lcl_nrdb_226
+lcl|nrdb|227 -> lcl_nrdb_227
+lcl|nrdb|228 -> lcl_nrdb_228
+lcl|nrdb|229 -> lcl_nrdb_229
+lcl|nrdb|230 -> lcl_nrdb_230
+lcl|nrdb|231 -> lcl_nrdb_231
+lcl|nrdb|232 -> lcl_nrdb_232
+lcl|nrdb|233 -> lcl_nrdb_233
+lcl|nrdb|234 -> lcl_nrdb_234
+lcl|nrdb|235 -> lcl_nrdb_235
+lcl|nrdb|236 -> lcl_nrdb_236
+lcl|nrdb|237 -> lcl_nrdb_237
+lcl|nrdb|238 -> lcl_nrdb_238
+lcl|nrdb|239 -> lcl_nrdb_239
+lcl|nrdb|240 -> lcl_nrdb_240
+lcl|nrdb|241 -> lcl_nrdb_241
+lcl|nrdb|242 -> lcl_nrdb_242
+lcl|nrdb|243 -> lcl_nrdb_243
+lcl|nrdb|244 -> lcl_nrdb_244
+lcl|nrdb|245 -> lcl_nrdb_245
+lcl|nrdb|246 -> lcl_nrdb_246
+lcl|nrdb|247 -> lcl_nrdb_247
+lcl|nrdb|248 -> lcl_nrdb_248
+lcl|nrdb|249 -> lcl_nrdb_249
+lcl|nrdb|250 -> lcl_nrdb_250
+lcl|nrdb|251 -> lcl_nrdb_251
+lcl|nrdb|252 -> lcl_nrdb_252
+lcl|nrdb|253 -> lcl_nrdb_253
+lcl|nrdb|254 -> lcl_nrdb_254
+lcl|nrdb|255 -> lcl_nrdb_255
+lcl|nrdb|256 -> lcl_nrdb_256
+lcl|nrdb|257 -> lcl_nrdb_257
+lcl|nrdb|258 -> lcl_nrdb_258
+lcl|nrdb|259 -> lcl_nrdb_259
+lcl|nrdb|260 -> lcl_nrdb_260
+lcl|nrdb|261 -> lcl_nrdb_261
+lcl|nrdb|262 -> lcl_nrdb_262
+lcl|nrdb|263 -> lcl_nrdb_263
+lcl|nrdb|264 -> lcl_nrdb_264
+lcl|nrdb|265 -> lcl_nrdb_265
+lcl|nrdb|266 -> lcl_nrdb_266
+lcl|nrdb|267 -> lcl_nrdb_267
+lcl|nrdb|268 -> lcl_nrdb_268
+lcl|nrdb|269 -> lcl_nrdb_269
+lcl|nrdb|270 -> lcl_nrdb_270
+lcl|nrdb|271 -> lcl_nrdb_271
+lcl|nrdb|272 -> lcl_nrdb_272
+lcl|nrdb|273 -> lcl_nrdb_273
+lcl|nrdb|274 -> lcl_nrdb_274
+lcl|nrdb|275 -> lcl_nrdb_275
+lcl|nrdb|276 -> lcl_nrdb_276
+lcl|nrdb|277 -> lcl_nrdb_277
+lcl|nrdb|278 -> lcl_nrdb_278
+lcl|nrdb|279 -> lcl_nrdb_279
+lcl|nrdb|280 -> lcl_nrdb_280
+lcl|nrdb|281 -> lcl_nrdb_281
+lcl|nrdb|282 -> lcl_nrdb_282
+lcl|nrdb|283 -> lcl_nrdb_283
+lcl|nrdb|284 -> lcl_nrdb_284
+lcl|nrdb|285 -> lcl_nrdb_285
+lcl|nrdb|286 -> lcl_nrdb_286
+lcl|nrdb|287 -> lcl_nrdb_287
+lcl|nrdb|288 -> lcl_nrdb_288
+lcl|nrdb|289 -> lcl_nrdb_289
+lcl|nrdb|290 -> lcl_nrdb_290
+lcl|nrdb|291 -> lcl_nrdb_291
+lcl|nrdb|292 -> lcl_nrdb_292
+lcl|nrdb|293 -> lcl_nrdb_293
+lcl|nrdb|294 -> lcl_nrdb_294
+lcl|nrdb|295 -> lcl_nrdb_295
+lcl|nrdb|296 -> lcl_nrdb_296
+lcl|nrdb|297 -> lcl_nrdb_297
+lcl|nrdb|298 -> lcl_nrdb_298
+lcl|nrdb|299 -> lcl_nrdb_299
+lcl|nrdb|300 -> lcl_nrdb_300
+lcl|nrdb|301 -> lcl_nrdb_301
+lcl|nrdb|302 -> lcl_nrdb_302
+lcl|nrdb|303 -> lcl_nrdb_303
+lcl|nrdb|304 -> lcl_nrdb_304
+lcl|nrdb|305 -> lcl_nrdb_305
+lcl|nrdb|306 -> lcl_nrdb_306
+lcl|nrdb|307 -> lcl_nrdb_307
+lcl|nrdb|308 -> lcl_nrdb_308
+lcl|nrdb|309 -> lcl_nrdb_309
+lcl|nrdb|310 -> lcl_nrdb_310
+lcl|nrdb|311 -> lcl_nrdb_311
+lcl|nrdb|312 -> lcl_nrdb_312
+lcl|nrdb|313 -> lcl_nrdb_313
+lcl|nrdb|314 -> lcl_nrdb_314
+lcl|nrdb|315 -> lcl_nrdb_315
+lcl|nrdb|316 -> lcl_nrdb_316
+lcl|nrdb|317 -> lcl_nrdb_317
+lcl|nrdb|318 -> lcl_nrdb_318
+lcl|nrdb|319 -> lcl_nrdb_319
+lcl|nrdb|320 -> lcl_nrdb_320
+lcl|nrdb|321 -> lcl_nrdb_321
+lcl|nrdb|322 -> lcl_nrdb_322
+lcl|nrdb|323 -> lcl_nrdb_323
+lcl|nrdb|324 -> lcl_nrdb_324
+lcl|nrdb|325 -> lcl_nrdb_325
+lcl|nrdb|326 -> lcl_nrdb_326
+lcl|nrdb|327 -> lcl_nrdb_327
+lcl|nrdb|328 -> lcl_nrdb_328
+lcl|nrdb|329 -> lcl_nrdb_329
+lcl|nrdb|330 -> lcl_nrdb_330
+lcl|nrdb|331 -> lcl_nrdb_331
+lcl|nrdb|332 -> lcl_nrdb_332
+lcl|nrdb|333 -> lcl_nrdb_333
+lcl|nrdb|334 -> lcl_nrdb_334
+lcl|nrdb|335 -> lcl_nrdb_335
+lcl|nrdb|336 -> lcl_nrdb_336
+lcl|nrdb|337 -> lcl_nrdb_337
+lcl|nrdb|338 -> lcl_nrdb_338
+lcl|nrdb|339 -> lcl_nrdb_339
+lcl|nrdb|340 -> lcl_nrdb_340
+lcl|nrdb|341 -> lcl_nrdb_341
+lcl|nrdb|342 -> lcl_nrdb_342
+lcl|nrdb|343 -> lcl_nrdb_343
+lcl|nrdb|344 -> lcl_nrdb_344
+lcl|nrdb|345 -> lcl_nrdb_345
+lcl|nrdb|346 -> lcl_nrdb_346
+lcl|nrdb|347 -> lcl_nrdb_347
+lcl|nrdb|348 -> lcl_nrdb_348
+lcl|nrdb|349 -> lcl_nrdb_349
+lcl|nrdb|350 -> lcl_nrdb_350
+lcl|nrdb|351 -> lcl_nrdb_351
+lcl|nrdb|352 -> lcl_nrdb_352
+lcl|nrdb|353 -> lcl_nrdb_353
+lcl|nrdb|354 -> lcl_nrdb_354
+lcl|nrdb|355 -> lcl_nrdb_355
+lcl|nrdb|356 -> lcl_nrdb_356
+lcl|nrdb|357 -> lcl_nrdb_357
+lcl|nrdb|358 -> lcl_nrdb_358
+lcl|nrdb|359 -> lcl_nrdb_359
+lcl|nrdb|360 -> lcl_nrdb_360
+lcl|nrdb|361 -> lcl_nrdb_361
+lcl|nrdb|362 -> lcl_nrdb_362
+lcl|nrdb|363 -> lcl_nrdb_363
+lcl|nrdb|364 -> lcl_nrdb_364
+lcl|nrdb|365 -> lcl_nrdb_365
+lcl|nrdb|366 -> lcl_nrdb_366
+lcl|nrdb|367 -> lcl_nrdb_367
+lcl|nrdb|368 -> lcl_nrdb_368
+lcl|nrdb|369 -> lcl_nrdb_369
+lcl|nrdb|370 -> lcl_nrdb_370
+lcl|nrdb|371 -> lcl_nrdb_371
+lcl|nrdb|372 -> lcl_nrdb_372
+lcl|nrdb|373 -> lcl_nrdb_373
+lcl|nrdb|374 -> lcl_nrdb_374
+lcl|nrdb|375 -> lcl_nrdb_375
+lcl|nrdb|376 -> lcl_nrdb_376
+lcl|nrdb|377 -> lcl_nrdb_377
+lcl|nrdb|378 -> lcl_nrdb_378
+lcl|nrdb|379 -> lcl_nrdb_379
+lcl|nrdb|380 -> lcl_nrdb_380
+lcl|nrdb|381 -> lcl_nrdb_381
+lcl|nrdb|382 -> lcl_nrdb_382
+lcl|nrdb|383 -> lcl_nrdb_383
+lcl|nrdb|384 -> lcl_nrdb_384
+lcl|nrdb|385 -> lcl_nrdb_385
+lcl|nrdb|386 -> lcl_nrdb_386
+lcl|nrdb|387 -> lcl_nrdb_387
+lcl|nrdb|388 -> lcl_nrdb_388
+lcl|nrdb|389 -> lcl_nrdb_389
+lcl|nrdb|390 -> lcl_nrdb_390
+lcl|nrdb|391 -> lcl_nrdb_391
+lcl|nrdb|392 -> lcl_nrdb_392
+lcl|nrdb|393 -> lcl_nrdb_393
+lcl|nrdb|394 -> lcl_nrdb_394
+lcl|nrdb|395 -> lcl_nrdb_395
+lcl|nrdb|396 -> lcl_nrdb_396
+lcl|nrdb|397 -> lcl_nrdb_397
+lcl|nrdb|398 -> lcl_nrdb_398
+lcl|nrdb|399 -> lcl_nrdb_399
+lcl|nrdb|400 -> lcl_nrdb_400
+lcl|nrdb|401 -> lcl_nrdb_401
+lcl|nrdb|402 -> lcl_nrdb_402
+lcl|nrdb|403 -> lcl_nrdb_403
+lcl|nrdb|404 -> lcl_nrdb_404
+lcl|nrdb|405 -> lcl_nrdb_405
+lcl|nrdb|406 -> lcl_nrdb_406
+lcl|nrdb|407 -> lcl_nrdb_407
+lcl|nrdb|408 -> lcl_nrdb_408
+lcl|nrdb|409 -> lcl_nrdb_409
+lcl|nrdb|410 -> lcl_nrdb_410
+lcl|nrdb|411 -> lcl_nrdb_411
+lcl|nrdb|412 -> lcl_nrdb_412
+lcl|nrdb|413 -> lcl_nrdb_413
+lcl|nrdb|414 -> lcl_nrdb_414
+lcl|nrdb|415 -> lcl_nrdb_415
+lcl|nrdb|416 -> lcl_nrdb_416
+lcl|nrdb|417 -> lcl_nrdb_417
+lcl|nrdb|418 -> lcl_nrdb_418
+lcl|nrdb|419 -> lcl_nrdb_419
+lcl|nrdb|420 -> lcl_nrdb_420
+lcl|nrdb|421 -> lcl_nrdb_421
+lcl|nrdb|422 -> lcl_nrdb_422
+lcl|nrdb|423 -> lcl_nrdb_423
+lcl|nrdb|424 -> lcl_nrdb_424
+lcl|nrdb|425 -> lcl_nrdb_425
+lcl|nrdb|426 -> lcl_nrdb_426
+lcl|nrdb|427 -> lcl_nrdb_427
+lcl|nrdb|428 -> lcl_nrdb_428
+lcl|nrdb|429 -> lcl_nrdb_429
+lcl|nrdb|430 -> lcl_nrdb_430
+lcl|nrdb|431 -> lcl_nrdb_431
+lcl|nrdb|432 -> lcl_nrdb_432
+lcl|nrdb|433 -> lcl_nrdb_433
+lcl|nrdb|434 -> lcl_nrdb_434
+lcl|nrdb|435 -> lcl_nrdb_435
+lcl|nrdb|436 -> lcl_nrdb_436
+lcl|nrdb|437 -> lcl_nrdb_437
+lcl|nrdb|438 -> lcl_nrdb_438
+lcl|nrdb|439 -> lcl_nrdb_439
+lcl|nrdb|440 -> lcl_nrdb_440
+lcl|nrdb|441 -> lcl_nrdb_441
+lcl|nrdb|442 -> lcl_nrdb_442
+lcl|nrdb|443 -> lcl_nrdb_443
+lcl|nrdb|444 -> lcl_nrdb_444
+lcl|nrdb|445 -> lcl_nrdb_445
+lcl|nrdb|446 -> lcl_nrdb_446
+lcl|nrdb|447 -> lcl_nrdb_447
+lcl|nrdb|448 -> lcl_nrdb_448
+lcl|nrdb|449 -> lcl_nrdb_449
+lcl|nrdb|450 -> lcl_nrdb_450
+lcl|nrdb|451 -> lcl_nrdb_451
+lcl|nrdb|452 -> lcl_nrdb_452
+lcl|nrdb|453 -> lcl_nrdb_453
+lcl|nrdb|454 -> lcl_nrdb_454
+lcl|nrdb|455 -> lcl_nrdb_455
+lcl|nrdb|456 -> lcl_nrdb_456
+lcl|nrdb|457 -> lcl_nrdb_457
+lcl|nrdb|458 -> lcl_nrdb_458
+lcl|nrdb|459 -> lcl_nrdb_459
+lcl|nrdb|460 -> lcl_nrdb_460
+lcl|nrdb|461 -> lcl_nrdb_461
+lcl|nrdb|462 -> lcl_nrdb_462
+lcl|nrdb|463 -> lcl_nrdb_463
+lcl|nrdb|464 -> lcl_nrdb_464
+lcl|nrdb|465 -> lcl_nrdb_465
+lcl|nrdb|466 -> lcl_nrdb_466
+lcl|nrdb|467 -> lcl_nrdb_467
+lcl|nrdb|468 -> lcl_nrdb_468
+lcl|nrdb|469 -> lcl_nrdb_469
+lcl|nrdb|470 -> lcl_nrdb_470
+lcl|nrdb|471 -> lcl_nrdb_471
+lcl|nrdb|472 -> lcl_nrdb_472
+lcl|nrdb|473 -> lcl_nrdb_473
+lcl|nrdb|474 -> lcl_nrdb_474
+lcl|nrdb|475 -> lcl_nrdb_475
+lcl|nrdb|476 -> lcl_nrdb_476
+lcl|nrdb|477 -> lcl_nrdb_477
+lcl|nrdb|478 -> lcl_nrdb_478
+lcl|nrdb|479 -> lcl_nrdb_479
+lcl|nrdb|480 -> lcl_nrdb_480
+lcl|nrdb|481 -> lcl_nrdb_481
+lcl|nrdb|482 -> lcl_nrdb_482
+lcl|nrdb|483 -> lcl_nrdb_483
+lcl|nrdb|484 -> lcl_nrdb_484
+lcl|nrdb|485 -> lcl_nrdb_485
+lcl|nrdb|486 -> lcl_nrdb_486
+lcl|nrdb|487 -> lcl_nrdb_487
+lcl|nrdb|488 -> lcl_nrdb_488
+lcl|nrdb|489 -> lcl_nrdb_489
+lcl|nrdb|490 -> lcl_nrdb_490
+lcl|nrdb|491 -> lcl_nrdb_491
+lcl|nrdb|492 -> lcl_nrdb_492
+lcl|nrdb|493 -> lcl_nrdb_493
+lcl|nrdb|494 -> lcl_nrdb_494
+lcl|nrdb|495 -> lcl_nrdb_495
+lcl|nrdb|496 -> lcl_nrdb_496
+lcl|nrdb|497 -> lcl_nrdb_497
+lcl|nrdb|498 -> lcl_nrdb_498
+lcl|nrdb|499 -> lcl_nrdb_499
+lcl|nrdb|500 -> lcl_nrdb_500
+lcl|nrdb|501 -> lcl_nrdb_501
+lcl|nrdb|502 -> lcl_nrdb_502
+lcl|nrdb|503 -> lcl_nrdb_503
+lcl|nrdb|504 -> lcl_nrdb_504
+lcl|nrdb|505 -> lcl_nrdb_505
+lcl|nrdb|506 -> lcl_nrdb_506
+lcl|nrdb|507 -> lcl_nrdb_507
+lcl|nrdb|508 -> lcl_nrdb_508
+lcl|nrdb|509 -> lcl_nrdb_509
+lcl|nrdb|510 -> lcl_nrdb_510
+lcl|nrdb|511 -> lcl_nrdb_511
+lcl|nrdb|512 -> lcl_nrdb_512
+lcl|nrdb|513 -> lcl_nrdb_513
+lcl|nrdb|514 -> lcl_nrdb_514
+lcl|nrdb|515 -> lcl_nrdb_515
+lcl|nrdb|516 -> lcl_nrdb_516
+lcl|nrdb|517 -> lcl_nrdb_517
+lcl|nrdb|518 -> lcl_nrdb_518
+lcl|nrdb|519 -> lcl_nrdb_519
+lcl|nrdb|520 -> lcl_nrdb_520
+lcl|nrdb|521 -> lcl_nrdb_521
+lcl|nrdb|522 -> lcl_nrdb_522
+lcl|nrdb|523 -> lcl_nrdb_523
+lcl|nrdb|524 -> lcl_nrdb_524
+lcl|nrdb|525 -> lcl_nrdb_525
+lcl|nrdb|526 -> lcl_nrdb_526
+lcl|nrdb|527 -> lcl_nrdb_527
+lcl|nrdb|528 -> lcl_nrdb_528
+lcl|nrdb|529 -> lcl_nrdb_529
+lcl|nrdb|530 -> lcl_nrdb_530
+lcl|nrdb|531 -> lcl_nrdb_531
+lcl|nrdb|532 -> lcl_nrdb_532
+lcl|nrdb|533 -> lcl_nrdb_533
+lcl|nrdb|534 -> lcl_nrdb_534
+lcl|nrdb|535 -> lcl_nrdb_535
+lcl|nrdb|536 -> lcl_nrdb_536
+lcl|nrdb|537 -> lcl_nrdb_537
+lcl|nrdb|538 -> lcl_nrdb_538
+lcl|nrdb|539 -> lcl_nrdb_539
+lcl|nrdb|540 -> lcl_nrdb_540
+lcl|nrdb|541 -> lcl_nrdb_541
+lcl|nrdb|542 -> lcl_nrdb_542
+lcl|nrdb|543 -> lcl_nrdb_543
+lcl|nrdb|544 -> lcl_nrdb_544
+lcl|nrdb|545 -> lcl_nrdb_545
+lcl|nrdb|546 -> lcl_nrdb_546
+lcl|nrdb|547 -> lcl_nrdb_547
+lcl|nrdb|548 -> lcl_nrdb_548
+lcl|nrdb|549 -> lcl_nrdb_549
+lcl|nrdb|550 -> lcl_nrdb_550
+lcl|nrdb|551 -> lcl_nrdb_551
+lcl|nrdb|552 -> lcl_nrdb_552
+lcl|nrdb|553 -> lcl_nrdb_553
+lcl|nrdb|554 -> lcl_nrdb_554
+lcl|nrdb|555 -> lcl_nrdb_555
+lcl|nrdb|556 -> lcl_nrdb_556
+lcl|nrdb|557 -> lcl_nrdb_557
+lcl|nrdb|558 -> lcl_nrdb_558
+lcl|nrdb|559 -> lcl_nrdb_559
+lcl|nrdb|560 -> lcl_nrdb_560
+lcl|nrdb|561 -> lcl_nrdb_561
+lcl|nrdb|562 -> lcl_nrdb_562
+lcl|nrdb|563 -> lcl_nrdb_563
+lcl|nrdb|564 -> lcl_nrdb_564
+lcl|nrdb|565 -> lcl_nrdb_565
+lcl|nrdb|566 -> lcl_nrdb_566
+lcl|nrdb|567 -> lcl_nrdb_567
+lcl|nrdb|568 -> lcl_nrdb_568
+lcl|nrdb|569 -> lcl_nrdb_569
+lcl|nrdb|570 -> lcl_nrdb_570
+lcl|nrdb|571 -> lcl_nrdb_571
+lcl|nrdb|572 -> lcl_nrdb_572
+lcl|nrdb|573 -> lcl_nrdb_573
+lcl|nrdb|574 -> lcl_nrdb_574
+lcl|nrdb|575 -> lcl_nrdb_575
+lcl|nrdb|576 -> lcl_nrdb_576
+lcl|nrdb|577 -> lcl_nrdb_577
+lcl|nrdb|578 -> lcl_nrdb_578
+lcl|nrdb|579 -> lcl_nrdb_579
+lcl|nrdb|580 -> lcl_nrdb_580
+lcl|nrdb|581 -> lcl_nrdb_581
+lcl|nrdb|582 -> lcl_nrdb_582
+lcl|nrdb|583 -> lcl_nrdb_583
+lcl|nrdb|584 -> lcl_nrdb_584
+lcl|nrdb|585 -> lcl_nrdb_585
+lcl|nrdb|586 -> lcl_nrdb_586
+lcl|nrdb|587 -> lcl_nrdb_587
+lcl|nrdb|588 -> lcl_nrdb_588
+lcl|nrdb|589 -> lcl_nrdb_589
+lcl|nrdb|590 -> lcl_nrdb_590
+lcl|nrdb|591 -> lcl_nrdb_591
+lcl|nrdb|592 -> lcl_nrdb_592
+lcl|nrdb|593 -> lcl_nrdb_593
+lcl|nrdb|594 -> lcl_nrdb_594
+lcl|nrdb|595 -> lcl_nrdb_595
+lcl|nrdb|596 -> lcl_nrdb_596
+lcl|nrdb|597 -> lcl_nrdb_597
+lcl|nrdb|598 -> lcl_nrdb_598
+lcl|nrdb|599 -> lcl_nrdb_599
+lcl|nrdb|600 -> lcl_nrdb_600
+lcl|nrdb|601 -> lcl_nrdb_601
+lcl|nrdb|602 -> lcl_nrdb_602
+lcl|nrdb|603 -> lcl_nrdb_603
+lcl|nrdb|604 -> lcl_nrdb_604
+lcl|nrdb|605 -> lcl_nrdb_605
+lcl|nrdb|606 -> lcl_nrdb_606
+lcl|nrdb|607 -> lcl_nrdb_607
+lcl|nrdb|608 -> lcl_nrdb_608
+lcl|nrdb|609 -> lcl_nrdb_609
+lcl|nrdb|610 -> lcl_nrdb_610
+lcl|nrdb|611 -> lcl_nrdb_611
+lcl|nrdb|612 -> lcl_nrdb_612
+lcl|nrdb|613 -> lcl_nrdb_613
+lcl|nrdb|614 -> lcl_nrdb_614
+lcl|nrdb|615 -> lcl_nrdb_615
+lcl|nrdb|616 -> lcl_nrdb_616
+lcl|nrdb|617 -> lcl_nrdb_617
+lcl|nrdb|618 -> lcl_nrdb_618
+lcl|nrdb|619 -> lcl_nrdb_619
+lcl|nrdb|620 -> lcl_nrdb_620
+lcl|nrdb|621 -> lcl_nrdb_621
+lcl|nrdb|622 -> lcl_nrdb_622
+lcl|nrdb|623 -> lcl_nrdb_623
+lcl|nrdb|624 -> lcl_nrdb_624
+lcl|nrdb|625 -> lcl_nrdb_625
+lcl|nrdb|626 -> lcl_nrdb_626
+lcl|nrdb|627 -> lcl_nrdb_627
+lcl|nrdb|628 -> lcl_nrdb_628
+lcl|nrdb|629 -> lcl_nrdb_629
+lcl|nrdb|630 -> lcl_nrdb_630
+lcl|nrdb|631 -> lcl_nrdb_631
+lcl|nrdb|632 -> lcl_nrdb_632
+lcl|nrdb|633 -> lcl_nrdb_633
+lcl|nrdb|634 -> lcl_nrdb_634
+lcl|nrdb|635 -> lcl_nrdb_635
+lcl|nrdb|636 -> lcl_nrdb_636
+lcl|nrdb|637 -> lcl_nrdb_637
+lcl|nrdb|638 -> lcl_nrdb_638
+lcl|nrdb|639 -> lcl_nrdb_639
+lcl|nrdb|640 -> lcl_nrdb_640
+lcl|nrdb|641 -> lcl_nrdb_641
+lcl|nrdb|642 -> lcl_nrdb_642
+lcl|uba|1 -> lcl_uba_1
+lcl|uba|2 -> lcl_uba_2
+lcl|uba|3 -> lcl_uba_3
+lcl|uba|4 -> lcl_uba_4
+lcl|uba|5 -> lcl_uba_5
+lcl|uba|6 -> lcl_uba_6
+lcl|uba|7 -> lcl_uba_7
+lcl|uba|8 -> lcl_uba_8
+lcl|uba|9 -> lcl_uba_9
+lcl|uba|10 -> lcl_uba_10
+lcl|uba|11 -> lcl_uba_11
+lcl|uba|12 -> lcl_uba_12
+lcl|uba|13 -> lcl_uba_13
+lcl|uba|14 -> lcl_uba_14
+lcl|uba|15 -> lcl_uba_15
+lcl|uba|16 -> lcl_uba_16
+lcl|uba|17 -> lcl_uba_17
+lcl|uba|18 -> lcl_uba_18
+lcl|uba|19 -> lcl_uba_19
+lcl|uba|20 -> lcl_uba_20
+lcl|uba|21 -> lcl_uba_21
+lcl|uba|22 -> lcl_uba_22
+lcl|uba|23 -> lcl_uba_23
+lcl|uba|24 -> lcl_uba_24
+lcl|uba|25 -> lcl_uba_25
+lcl|uba|26 -> lcl_uba_26
+lcl|uba|27 -> lcl_uba_27
+lcl|uba|28 -> lcl_uba_28
+lcl|uba|29 -> lcl_uba_29
+lcl|uba|30 -> lcl_uba_30
+lcl|uba|31 -> lcl_uba_31
+lcl|uba|32 -> lcl_uba_32
+lcl|uba|33 -> lcl_uba_33
+lcl|uba|34 -> lcl_uba_34
+lcl|uba|35 -> lcl_uba_35
+lcl|uba|36 -> lcl_uba_36
+lcl|uba|37 -> lcl_uba_37
+lcl|uba|38 -> lcl_uba_38
+lcl|uba|39 -> lcl_uba_39
+lcl|uba|40 -> lcl_uba_40
+lcl|uba|41 -> lcl_uba_41
+lcl|uba|42 -> lcl_uba_42
+lcl|uba|43 -> lcl_uba_43
+lcl|uba|44 -> lcl_uba_44
+lcl|uba|45 -> lcl_uba_45
+lcl|uba|46 -> lcl_uba_46
+lcl|uba|47 -> lcl_uba_47
+lcl|uba|48 -> lcl_uba_48
+lcl|uba|49 -> lcl_uba_49
+lcl|uba|50 -> lcl_uba_50
+lcl|uba|51 -> lcl_uba_51
+lcl|uba|52 -> lcl_uba_52
+lcl|uba|53 -> lcl_uba_53
+lcl|uba|54 -> lcl_uba_54
+lcl|uba|55 -> lcl_uba_55
+lcl|uba|56 -> lcl_uba_56
+lcl|uba|57 -> lcl_uba_57
+lcl|uba|58 -> lcl_uba_58
+lcl|uba|59 -> lcl_uba_59
+lcl|uba|60 -> lcl_uba_60
+lcl|uba|61 -> lcl_uba_61
+lcl|uba|62 -> lcl_uba_62
+lcl|uba|63 -> lcl_uba_63
+
+              Gap/Ambiguity  Composition  p-value
+   1  lcl_canon_1     0.66%    passed     96.03%
+   2  lcl_canon_2     4.65%    passed     53.71%
+   3  lcl_canon_3     4.65%    passed     44.13%
+   4  lcl_canon_4     0.88%    passed     80.96%
+   5  lcl_canon_5     0.66%    passed     95.10%
+   6  lcl_canon_6     0.66%    passed     95.31%
+   7  lcl_canon_7     4.42%    passed     52.50%
+   8  lcl_canon_8     4.42%    passed     50.48%
+   9  lcl_canon_9     0.66%    passed     94.76%
+  10  lcl_canon_10    0.88%    passed     77.95%
+  11  lcl_canon_11    0.66%    passed     93.28%
+  12  lcl_canon_12    0.66%    passed     96.84%
+  13  lcl_canon_13    0.66%    passed     97.27%
+  14  lcl_canon_14    4.42%    passed     44.98%
+  15  lcl_canon_15    4.42%    passed     50.08%
+  16  lcl_canon_16    4.65%    passed     38.94%
+  17  lcl_canon_17    0.66%    passed     97.27%
+  18  lcl_canon_18    4.42%    passed     50.08%
+  19  lcl_canon_19    4.42%    passed     50.08%
+  20  lcl_canon_20    4.42%    passed     56.96%
+  21  lcl_canon_21    0.44%    passed     38.63%
+  22  lcl_canon_22    1.33%    passed     94.00%
+  23  lcl_canon_23    1.99%    failed      0.01%
+  24  lcl_prev_1      4.42%    passed     50.08%
+  25  lcl_prev_14     0.66%    passed     95.26%
+  26  lcl_prev_21     0.44%    passed     45.46%
+  27  lcl_prev_35     4.65%    passed      6.33%
+  28  lcl_prev_86     1.33%    passed     91.09%
+  29  lcl_prev_91     4.65%    passed     44.91%
+  30  lcl_prev_94     1.99%    failed      0.01%
+  31  lcl_nrdb_1      3.98%    failed      0.76%
+  32  lcl_nrdb_2      3.76%    failed      0.88%
+  33  lcl_nrdb_3      3.10%    failed      1.08%
+  34  lcl_nrdb_4      4.42%    failed      0.79%
+  35  lcl_nrdb_5      5.75%    failed      1.01%
+  36  lcl_nrdb_6      3.98%    failed      0.76%
+  37  lcl_nrdb_7      1.11%    passed     87.68%
+  38  lcl_nrdb_8      3.32%    passed     86.31%
+  39  lcl_nrdb_9      1.55%    passed     37.53%
+  40  lcl_nrdb_10     0.66%    passed     97.88%
+  41  lcl_nrdb_11     1.11%    passed     90.26%
+  42  lcl_nrdb_12     0.88%    passed     94.24%
+  43  lcl_nrdb_13     1.33%    passed     91.52%
+  44  lcl_nrdb_14     1.33%    passed     96.72%
+  45  lcl_nrdb_15     0.88%    passed     32.32%
+  46  lcl_nrdb_16     1.11%    passed     52.41%
+  47  lcl_nrdb_17     0.66%    passed     55.61%
+  48  lcl_nrdb_18     0.66%    passed     55.61%
+  49  lcl_nrdb_19     1.11%    passed     51.22%
+  50  lcl_nrdb_20     1.55%    passed     33.95%
+  51  lcl_nrdb_21     1.11%    passed     83.89%
+  52  lcl_nrdb_22     1.55%    passed     81.05%
+  53  lcl_nrdb_23     0.66%    passed     93.42%
+  54  lcl_nrdb_24     1.55%    passed     98.87%
+  55  lcl_nrdb_25     1.33%    passed     14.87%
+  56  lcl_nrdb_26     1.33%    passed     85.25%
+  57  lcl_nrdb_27     1.33%    passed     85.25%
+  58  lcl_nrdb_28     1.33%    passed     85.06%
+  59  lcl_nrdb_29     1.11%    passed     53.00%
+  60  lcl_nrdb_30     1.55%    passed     50.81%
+  61  lcl_nrdb_31     1.33%    passed     62.82%
+  62  lcl_nrdb_32     0.88%    passed     20.98%
+  63  lcl_nrdb_33     1.11%    passed     47.75%
+  64  lcl_nrdb_34     1.55%    passed      5.81%
+  65  lcl_nrdb_35     0.88%    passed     93.78%
+  66  lcl_nrdb_36     1.77%    failed      3.58%
+  67  lcl_nrdb_37     1.33%    passed     41.55%
+  68  lcl_nrdb_38     1.11%    passed     47.96%
+  69  lcl_nrdb_39     1.11%    failed      1.03%
+  70  lcl_nrdb_40     1.11%    passed     80.82%
+  71  lcl_nrdb_41     3.54%    passed     54.58%
+  72  lcl_nrdb_42     1.33%    passed     35.80%
+  73  lcl_nrdb_43     1.55%    passed     92.19%
+  74  lcl_nrdb_44     1.11%    passed     56.83%
+  75  lcl_nrdb_45     1.55%    passed     97.97%
+  76  lcl_nrdb_46     1.11%    passed     99.91%
+  77  lcl_nrdb_47     1.55%    passed     69.82%
+  78  lcl_nrdb_48     1.33%    failed      0.11%
+  79  lcl_nrdb_49     1.55%    passed     99.34%
+  80  lcl_nrdb_50     1.55%    passed     75.45%
+  81  lcl_nrdb_51     3.98%    passed     86.55%
+  82  lcl_nrdb_52     2.21%    passed     96.97%
+  83  lcl_nrdb_53     1.11%    failed      4.64%
+  84  lcl_nrdb_54     2.21%    passed     40.06%
+  85  lcl_nrdb_55     1.11%    passed     87.11%
+  86  lcl_nrdb_56     3.10%    failed      1.35%
+  87  lcl_nrdb_57     0.66%    passed     81.88%
+  88  lcl_nrdb_58     0.88%    passed     95.83%
+  89  lcl_nrdb_59     1.33%    passed     99.17%
+  90  lcl_nrdb_60     0.88%    passed     41.34%
+  91  lcl_nrdb_61     1.11%    passed     56.11%
+  92  lcl_nrdb_62     1.55%    failed      4.71%
+  93  lcl_nrdb_63     1.33%    passed     98.48%
+  94  lcl_nrdb_64     0.88%    passed     81.73%
+  95  lcl_nrdb_65     1.33%    passed     96.39%
+  96  lcl_nrdb_66     3.10%    passed     99.83%
+  97  lcl_nrdb_67     1.55%    passed     99.24%
+  98  lcl_nrdb_68     1.55%    passed     53.97%
+  99  lcl_nrdb_69     1.55%    passed     58.70%
+ 100  lcl_nrdb_70     1.55%    passed     47.73%
+ 101  lcl_nrdb_71     0.66%    passed     98.43%
+ 102  lcl_nrdb_72     3.76%    passed     91.53%
+ 103  lcl_nrdb_73     3.76%    passed     90.80%
+ 104  lcl_nrdb_74     0.66%    passed     99.99%
+ 105  lcl_nrdb_75     1.55%    passed     96.47%
+ 106  lcl_nrdb_76     0.66%    passed     78.11%
+ 107  lcl_nrdb_77     1.55%    passed     98.55%
+ 108  lcl_nrdb_78     1.11%    passed     78.26%
+ 109  lcl_nrdb_79     1.11%    passed     44.18%
+ 110  lcl_nrdb_80     1.55%    passed     98.45%
+ 111  lcl_nrdb_81     1.11%    passed     85.72%
+ 112  lcl_nrdb_82     1.55%    passed     99.37%
+ 113  lcl_nrdb_83     3.10%    passed     99.74%
+ 114  lcl_nrdb_84     1.55%    passed     99.05%
+ 115  lcl_nrdb_85     1.33%    passed     89.35%
+ 116  lcl_nrdb_86     0.44%    failed      1.70%
+ 117  lcl_nrdb_87     1.33%    passed     93.56%
+ 118  lcl_nrdb_88     0.66%    passed     96.36%
+ 119  lcl_nrdb_89     3.76%    passed     97.87%
+ 120  lcl_nrdb_90     1.77%    passed     96.70%
+ 121  lcl_nrdb_91     1.33%    passed     52.02%
+ 122  lcl_nrdb_92     1.11%    passed     52.48%
+ 123  lcl_nrdb_93     1.11%    passed     46.76%
+ 124  lcl_nrdb_94     0.66%    passed     50.28%
+ 125  lcl_nrdb_95     0.66%    passed     99.70%
+ 126  lcl_nrdb_96     0.66%    passed     93.35%
+ 127  lcl_nrdb_97     1.11%    passed     47.91%
+ 128  lcl_nrdb_98     1.55%    passed     54.86%
+ 129  lcl_nrdb_99     1.55%    passed     56.02%
+ 130  lcl_nrdb_100    0.88%    passed     33.07%
+ 131  lcl_nrdb_101    1.55%    passed     89.75%
+ 132  lcl_nrdb_102    1.33%    passed     54.18%
+ 133  lcl_nrdb_103    1.99%    passed     91.72%
+ 134  lcl_nrdb_104    0.66%    passed     99.70%
+ 135  lcl_nrdb_105    1.33%    passed     99.77%
+ 136  lcl_nrdb_106    1.11%    passed     17.66%
+ 137  lcl_nrdb_107    1.11%    passed     59.51%
+ 138  lcl_nrdb_108    1.55%    failed      4.78%
+ 139  lcl_nrdb_109    1.11%    passed     99.82%
+ 140  lcl_nrdb_110    1.77%    passed     93.20%
+ 141  lcl_nrdb_111    0.88%    passed     52.16%
+ 142  lcl_nrdb_112    1.55%    passed     33.66%
+ 143  lcl_nrdb_113    1.11%    passed     47.91%
+ 144  lcl_nrdb_114    3.76%    passed     98.36%
+ 145  lcl_nrdb_115    1.33%    passed     93.56%
+ 146  lcl_nrdb_116    1.55%    passed     95.64%
+ 147  lcl_nrdb_117    0.66%    passed     98.05%
+ 148  lcl_nrdb_118    0.66%    passed     94.97%
+ 149  lcl_nrdb_119    1.33%    passed     99.74%
+ 150  lcl_nrdb_120    1.55%    passed      9.51%
+ 151  lcl_nrdb_121    1.55%    passed     92.30%
+ 152  lcl_nrdb_122    1.11%    passed     94.42%
+ 153  lcl_nrdb_123    1.11%    passed     59.61%
+ 154  lcl_nrdb_124    1.33%    failed      3.01%
+ 155  lcl_nrdb_125    1.55%    failed      1.91%
+ 156  lcl_nrdb_126    0.66%    passed     97.37%
+ 157  lcl_nrdb_127    1.33%    passed     99.86%
+ 158  lcl_nrdb_128    1.33%    passed      9.05%
+ 159  lcl_nrdb_129    1.11%    passed     64.37%
+ 160  lcl_nrdb_130    4.42%    passed      9.15%
+ 161  lcl_nrdb_131    1.11%    passed     99.67%
+ 162  lcl_nrdb_132    1.11%    passed     99.67%
+ 163  lcl_nrdb_133    0.66%    passed     93.03%
+ 164  lcl_nrdb_134    1.55%    passed     86.34%
+ 165  lcl_nrdb_135    4.42%    passed     52.50%
+ 166  lcl_nrdb_136    4.65%    passed     53.71%
+ 167  lcl_nrdb_137    1.55%    passed     96.80%
+ 168  lcl_nrdb_138    1.55%    failed      2.57%
+ 169  lcl_nrdb_139    0.66%    passed     99.60%
+ 170  lcl_nrdb_140    4.42%    passed     45.48%
+ 171  lcl_nrdb_141    1.99%    passed     87.77%
+ 172  lcl_nrdb_142    1.33%    passed     89.07%
+ 173  lcl_nrdb_143    1.55%    passed     93.99%
+ 174  lcl_nrdb_144    1.55%    passed     89.61%
+ 175  lcl_nrdb_145    1.33%    passed     50.18%
+ 176  lcl_nrdb_146    1.11%    passed     25.29%
+ 177  lcl_nrdb_147    1.55%    passed     89.19%
+ 178  lcl_nrdb_148    2.88%    passed     98.64%
+ 179  lcl_nrdb_149    1.55%    passed     65.77%
+ 180  lcl_nrdb_150    1.55%    passed     91.86%
+ 181  lcl_nrdb_151    1.33%    passed     66.68%
+ 182  lcl_nrdb_152    0.88%    passed     96.00%
+ 183  lcl_nrdb_153    1.55%    passed     90.25%
+ 184  lcl_nrdb_154    1.33%    failed      0.11%
+ 185  lcl_nrdb_155    1.77%    passed     28.28%
+ 186  lcl_nrdb_156    1.77%    passed     20.99%
+ 187  lcl_nrdb_157    1.77%    passed     24.76%
+ 188  lcl_nrdb_158    1.77%    passed      8.11%
+ 189  lcl_nrdb_159    1.77%    passed     29.86%
+ 190  lcl_nrdb_160    1.77%    passed     27.71%
+ 191  lcl_nrdb_161    1.77%    passed     16.48%
+ 192  lcl_nrdb_162    1.77%    passed     16.43%
+ 193  lcl_nrdb_163    1.55%    passed     99.76%
+ 194  lcl_nrdb_164    1.55%    passed     80.57%
+ 195  lcl_nrdb_165    0.66%    passed     93.80%
+ 196  lcl_nrdb_166    0.66%    passed     97.05%
+ 197  lcl_nrdb_167    0.66%    passed     12.79%
+ 198  lcl_nrdb_168    1.55%    failed      4.52%
+ 199  lcl_nrdb_169    1.55%    passed     91.96%
+ 200  lcl_nrdb_170    1.33%    passed     89.69%
+ 201  lcl_nrdb_171    0.66%    passed     93.60%
+ 202  lcl_nrdb_172    3.10%    passed     92.13%
+ 203  lcl_nrdb_173    4.20%    passed     95.74%
+ 204  lcl_nrdb_174    1.55%    passed     84.90%
+ 205  lcl_nrdb_175    1.55%    passed     75.66%
+ 206  lcl_nrdb_176    1.33%    passed     91.09%
+ 207  lcl_nrdb_177    7.74%    passed     69.46%
+ 208  lcl_nrdb_178    1.55%    passed     26.04%
+ 209  lcl_nrdb_179    1.55%    passed     45.43%
+ 210  lcl_nrdb_180    1.55%    passed     74.65%
+ 211  lcl_nrdb_181    1.55%    passed     55.98%
+ 212  lcl_nrdb_182    1.55%    passed     52.83%
+ 213  lcl_nrdb_183    1.33%    passed     96.74%
+ 214  lcl_nrdb_184    0.66%    failed      0.40%
+ 215  lcl_nrdb_185    1.99%    passed     99.21%
+ 216  lcl_nrdb_186    3.10%    passed     33.58%
+ 217  lcl_nrdb_187    0.88%    passed     93.13%
+ 218  lcl_nrdb_188    0.88%    passed     90.50%
+ 219  lcl_nrdb_189    0.88%    passed     95.74%
+ 220  lcl_nrdb_190    0.88%    passed     28.85%
+ 221  lcl_nrdb_191    1.55%    passed     96.27%
+ 222  lcl_nrdb_192    1.55%    passed     95.38%
+ 223  lcl_nrdb_193    1.55%    passed     91.69%
+ 224  lcl_nrdb_194    1.55%    passed     99.96%
+ 225  lcl_nrdb_195    1.55%    passed     91.92%
+ 226  lcl_nrdb_196    1.55%    passed     98.56%
+ 227  lcl_nrdb_197    4.42%    passed      8.63%
+ 228  lcl_nrdb_198    1.55%    passed     79.79%
+ 229  lcl_nrdb_199    1.55%    passed     95.66%
+ 230  lcl_nrdb_200    1.55%    passed     99.43%
+ 231  lcl_nrdb_201    1.33%    failed      0.46%
+ 232  lcl_nrdb_202    1.11%    failed      1.07%
+ 233  lcl_nrdb_203    1.33%    passed     41.62%
+ 234  lcl_nrdb_204    1.55%    failed      0.41%
+ 235  lcl_nrdb_205    0.44%    failed      0.19%
+ 236  lcl_nrdb_206    1.55%    passed     97.43%
+ 237  lcl_nrdb_207    1.55%    failed      1.67%
+ 238  lcl_nrdb_208    0.44%    failed      0.12%
+ 239  lcl_nrdb_209    1.55%    passed     95.14%
+ 240  lcl_nrdb_210    1.55%    passed     73.66%
+ 241  lcl_nrdb_211    1.11%    passed     99.89%
+ 242  lcl_nrdb_212    0.66%    passed     97.89%
+ 243  lcl_nrdb_213    1.33%    passed     98.88%
+ 244  lcl_nrdb_214    1.33%    passed     11.98%
+ 245  lcl_nrdb_215    3.76%    passed     98.18%
+ 246  lcl_nrdb_216    1.11%    passed     99.88%
+ 247  lcl_nrdb_217    4.42%    passed      5.90%
+ 248  lcl_nrdb_218    1.11%    failed      0.06%
+ 249  lcl_nrdb_219    6.19%    passed     57.77%
+ 250  lcl_nrdb_220    3.10%    passed     99.81%
+ 251  lcl_nrdb_221    1.33%    passed     92.37%
+ 252  lcl_nrdb_222    0.66%    passed     45.59%
+ 253  lcl_nrdb_223    1.55%    failed      4.85%
+ 254  lcl_nrdb_224    0.44%    passed     14.95%
+ 255  lcl_nrdb_225    4.42%    passed      6.77%
+ 256  lcl_nrdb_226    1.55%    passed     98.90%
+ 257  lcl_nrdb_227    1.55%    passed     98.84%
+ 258  lcl_nrdb_228    1.33%    passed     99.37%
+ 259  lcl_nrdb_229    1.11%    passed     46.41%
+ 260  lcl_nrdb_230    1.77%    passed     32.11%
+ 261  lcl_nrdb_231    1.55%    passed     98.83%
+ 262  lcl_nrdb_232    1.55%    passed     98.83%
+ 263  lcl_nrdb_233    1.33%    passed     60.80%
+ 264  lcl_nrdb_234    0.88%    failed      0.04%
+ 265  lcl_nrdb_235    1.55%    failed      0.04%
+ 266  lcl_nrdb_236    1.33%    failed      0.95%
+ 267  lcl_nrdb_237    1.33%    failed      0.15%
+ 268  lcl_nrdb_238    1.77%    passed      6.33%
+ 269  lcl_nrdb_239    1.99%    failed      0.01%
+ 270  lcl_nrdb_240    1.99%    failed      0.01%
+ 271  lcl_nrdb_241    1.33%    passed     91.13%
+ 272  lcl_nrdb_242    4.42%    passed     50.08%
+ 273  lcl_nrdb_243    4.42%    passed     44.98%
+ 274  lcl_nrdb_244    0.66%    passed     99.47%
+ 275  lcl_nrdb_245    1.77%    passed     93.21%
+ 276  lcl_nrdb_246    1.33%    passed     75.46%
+ 277  lcl_nrdb_247    1.55%    passed     75.21%
+ 278  lcl_nrdb_248    1.55%    passed     67.54%
+ 279  lcl_nrdb_249    1.55%    passed     64.60%
+ 280  lcl_nrdb_250    1.55%    passed     94.93%
+ 281  lcl_nrdb_251    1.55%    passed      5.01%
+ 282  lcl_nrdb_252    1.55%    passed     93.82%
+ 283  lcl_nrdb_253    4.20%    passed     83.97%
+ 284  lcl_nrdb_254    1.33%    failed      1.14%
+ 285  lcl_nrdb_255    1.55%    passed     89.20%
+ 286  lcl_nrdb_256    0.66%    passed     69.45%
+ 287  lcl_nrdb_257    1.55%    passed     80.42%
+ 288  lcl_nrdb_258    1.55%    passed     91.92%
+ 289  lcl_nrdb_259    3.10%    passed     98.37%
+ 290  lcl_nrdb_260    3.10%    passed     99.76%
+ 291  lcl_nrdb_261    3.10%    passed     99.76%
+ 292  lcl_nrdb_262    3.10%    passed     99.62%
+ 293  lcl_nrdb_263    3.10%    passed     99.62%
+ 294  lcl_nrdb_264    3.98%    failed      0.38%
+ 295  lcl_nrdb_265    4.42%    passed      7.79%
+ 296  lcl_nrdb_266    1.55%    passed     32.33%
+ 297  lcl_nrdb_267    1.55%    passed     83.55%
+ 298  lcl_nrdb_268    1.77%    passed     36.76%
+ 299  lcl_nrdb_269    1.77%    passed     36.76%
+ 300  lcl_nrdb_270    1.77%    passed     36.76%
+ 301  lcl_nrdb_271    1.55%    passed     96.76%
+ 302  lcl_nrdb_272    1.55%    passed     22.56%
+ 303  lcl_nrdb_273    0.44%    failed      0.13%
+ 304  lcl_nrdb_274    1.11%    failed      4.60%
+ 305  lcl_nrdb_275    0.44%    failed      0.19%
+ 306  lcl_nrdb_276    0.44%    failed      0.95%
+ 307  lcl_nrdb_277    1.55%    passed      5.04%
+ 308  lcl_nrdb_278    0.44%    failed      0.30%
+ 309  lcl_nrdb_279    1.11%    failed      0.11%
+ 310  lcl_nrdb_280    0.44%    failed      0.12%
+ 311  lcl_nrdb_281    0.44%    failed      0.08%
+ 312  lcl_nrdb_282    0.44%    failed      0.12%
+ 313  lcl_nrdb_283    0.44%    failed      0.05%
+ 314  lcl_nrdb_284    0.66%    failed      0.36%
+ 315  lcl_nrdb_285    0.44%    failed      0.05%
+ 316  lcl_nrdb_286    0.44%    failed      0.75%
+ 317  lcl_nrdb_287    0.44%    failed      0.14%
+ 318  lcl_nrdb_288    0.44%    failed      0.48%
+ 319  lcl_nrdb_289    2.88%    passed     99.00%
+ 320  lcl_nrdb_290    1.55%    passed     80.57%
+ 321  lcl_nrdb_291    1.55%    passed     72.47%
+ 322  lcl_nrdb_292    1.11%    passed     62.54%
+ 323  lcl_nrdb_293    1.55%    passed     36.47%
+ 324  lcl_nrdb_294    1.33%    failed      0.46%
+ 325  lcl_nrdb_295    1.55%    passed      7.06%
+ 326  lcl_nrdb_296    1.33%    failed      1.71%
+ 327  lcl_nrdb_297    1.55%    passed      7.83%
+ 328  lcl_nrdb_298    0.88%    passed     93.57%
+ 329  lcl_nrdb_299    0.44%    passed     85.94%
+ 330  lcl_nrdb_300    1.55%    passed     99.61%
+ 331  lcl_nrdb_301    0.88%    passed     95.83%
+ 332  lcl_nrdb_302    1.55%    failed      0.04%
+ 333  lcl_nrdb_303    1.33%    passed     86.69%
+ 334  lcl_nrdb_304    0.44%    failed      0.96%
+ 335  lcl_nrdb_305    4.65%    passed     44.13%
+ 336  lcl_nrdb_306    1.33%    passed     91.09%
+ 337  lcl_nrdb_307    4.65%    passed      6.17%
+ 338  lcl_nrdb_308    1.11%    passed     51.22%
+ 339  lcl_nrdb_309    1.55%    passed     93.99%
+ 340  lcl_nrdb_310    4.65%    passed     11.13%
+ 341  lcl_nrdb_311    4.65%    passed      6.41%
+ 342  lcl_nrdb_312    4.65%    failed      4.55%
+ 343  lcl_nrdb_313    4.65%    passed      6.77%
+ 344  lcl_nrdb_314    4.65%    passed      5.73%
+ 345  lcl_nrdb_315    4.65%    passed      6.73%
+ 346  lcl_nrdb_316    4.65%    passed      6.33%
+ 347  lcl_nrdb_317    1.55%    passed     11.95%
+ 348  lcl_nrdb_318    1.55%    passed     13.88%
+ 349  lcl_nrdb_319    1.11%    failed      0.11%
+ 350  lcl_nrdb_320    1.11%    failed      4.49%
+ 351  lcl_nrdb_321    1.11%    passed     89.68%
+ 352  lcl_nrdb_322    3.76%    passed     55.01%
+ 353  lcl_nrdb_323    1.33%    passed     94.29%
+ 354  lcl_nrdb_324    1.55%    passed     54.86%
+ 355  lcl_nrdb_325    1.55%    passed     51.34%
+ 356  lcl_nrdb_326    1.77%    passed     40.25%
+ 357  lcl_nrdb_327    1.33%    passed      8.35%
+ 358  lcl_nrdb_328    1.77%    passed     89.90%
+ 359  lcl_nrdb_329    1.55%    passed     99.46%
+ 360  lcl_nrdb_330    1.33%    passed     99.30%
+ 361  lcl_nrdb_331    0.44%    passed     38.06%
+ 362  lcl_nrdb_332    1.33%    passed     99.98%
+ 363  lcl_nrdb_333    1.33%    passed     93.56%
+ 364  lcl_nrdb_334    1.33%    passed     93.56%
+ 365  lcl_nrdb_335    0.66%    passed     97.27%
+ 366  lcl_nrdb_336    0.66%    passed     97.27%
+ 367  lcl_nrdb_337    0.66%    passed     97.27%
+ 368  lcl_nrdb_338    0.66%    passed     95.31%
+ 369  lcl_nrdb_339    0.66%    passed     96.84%
+ 370  lcl_nrdb_340    0.44%    passed     38.63%
+ 371  lcl_nrdb_341    0.66%    passed     97.06%
+ 372  lcl_nrdb_342    1.33%    passed     84.28%
+ 373  lcl_nrdb_343    1.33%    passed     81.18%
+ 374  lcl_nrdb_344    4.42%    passed     50.08%
+ 375  lcl_nrdb_345    1.33%    passed     93.56%
+ 376  lcl_nrdb_346    1.33%    passed     98.45%
+ 377  lcl_nrdb_347    1.33%    passed     90.17%
+ 378  lcl_nrdb_348    1.33%    passed     93.56%
+ 379  lcl_nrdb_349   10.18%    passed     83.03%
+ 380  lcl_nrdb_350    1.55%    passed     92.00%
+ 381  lcl_nrdb_351    4.42%    passed      7.62%
+ 382  lcl_nrdb_352    1.33%    passed     14.87%
+ 383  lcl_nrdb_353    1.33%    passed     11.76%
+ 384  lcl_nrdb_354    3.76%    passed     62.23%
+ 385  lcl_nrdb_355    0.44%    passed     41.12%
+ 386  lcl_nrdb_356    1.55%    passed     97.47%
+ 387  lcl_nrdb_357    1.55%    passed     97.99%
+ 388  lcl_nrdb_358    1.55%    passed     97.39%
+ 389  lcl_nrdb_359    0.66%    passed     91.23%
+ 390  lcl_nrdb_360    1.33%    passed     76.91%
+ 391  lcl_nrdb_361    1.33%    passed     98.05%
+ 392  lcl_nrdb_362    1.33%    failed      1.64%
+ 393  lcl_nrdb_363    0.44%    passed     14.95%
+ 394  lcl_nrdb_364    1.55%    failed      1.45%
+ 395  lcl_nrdb_365    3.10%    failed      1.08%
+ 396  lcl_nrdb_366    3.98%    failed      0.76%
+ 397  lcl_nrdb_367    1.33%    failed      1.64%
+ 398  lcl_nrdb_368    1.33%    failed      1.79%
+ 399  lcl_nrdb_369    1.33%    failed      1.48%
+ 400  lcl_nrdb_370    1.33%    failed      1.74%
+ 401  lcl_nrdb_371    1.33%    failed      1.96%
+ 402  lcl_nrdb_372    1.33%    failed      1.29%
+ 403  lcl_nrdb_373    1.33%    failed      1.96%
+ 404  lcl_nrdb_374    1.33%    failed      1.28%
+ 405  lcl_nrdb_375    1.33%    failed      1.60%
+ 406  lcl_nrdb_376    1.33%    failed      1.60%
+ 407  lcl_nrdb_377    1.33%    failed      1.29%
+ 408  lcl_nrdb_378    1.33%    failed      1.43%
+ 409  lcl_nrdb_379    1.33%    failed      2.00%
+ 410  lcl_nrdb_380    1.33%    failed      2.02%
+ 411  lcl_nrdb_381    4.42%    passed     53.82%
+ 412  lcl_nrdb_382    0.66%    passed     97.27%
+ 413  lcl_nrdb_383    4.42%    passed     50.08%
+ 414  lcl_nrdb_384    4.42%    passed     50.08%
+ 415  lcl_nrdb_385    4.42%    passed     50.08%
+ 416  lcl_nrdb_386    0.66%    passed     95.10%
+ 417  lcl_nrdb_387    1.33%    failed      1.23%
+ 418  lcl_nrdb_388    1.33%    passed     94.00%
+ 419  lcl_nrdb_389    1.33%    failed      1.64%
+ 420  lcl_nrdb_390    1.33%    failed      2.48%
+ 421  lcl_nrdb_391    1.33%    failed      1.64%
+ 422  lcl_nrdb_392    1.33%    passed     96.70%
+ 423  lcl_nrdb_393    1.33%    failed      1.64%
+ 424  lcl_nrdb_394    1.33%    passed     14.87%
+ 425  lcl_nrdb_395    1.33%    passed     98.17%
+ 426  lcl_nrdb_396    0.44%    failed      0.30%
+ 427  lcl_nrdb_397    4.42%    passed     50.08%
+ 428  lcl_nrdb_398    1.33%    passed     90.55%
+ 429  lcl_nrdb_399    0.66%    passed     96.36%
+ 430  lcl_nrdb_400    0.66%    passed     92.61%
+ 431  lcl_nrdb_401    0.44%    passed     45.46%
+ 432  lcl_nrdb_402    0.66%    passed     96.79%
+ 433  lcl_nrdb_403    0.44%    passed     45.46%
+ 434  lcl_nrdb_404    4.65%    passed     10.15%
+ 435  lcl_nrdb_405    3.76%    passed     97.77%
+ 436  lcl_nrdb_406    1.11%    passed     74.23%
+ 437  lcl_nrdb_407    1.33%    passed     99.67%
+ 438  lcl_nrdb_408    1.11%    passed     79.38%
+ 439  lcl_nrdb_409    0.88%    passed     94.98%
+ 440  lcl_nrdb_410    0.66%    passed     97.24%
+ 441  lcl_nrdb_411    1.55%    passed     94.77%
+ 442  lcl_nrdb_412    1.99%    passed     99.95%
+ 443  lcl_nrdb_413    1.55%    passed     93.99%
+ 444  lcl_nrdb_414    1.55%    passed     90.38%
+ 445  lcl_nrdb_415    1.55%    passed     96.79%
+ 446  lcl_nrdb_416    1.55%    passed     96.79%
+ 447  lcl_nrdb_417    1.55%    passed     97.03%
+ 448  lcl_nrdb_418    1.33%    failed      1.64%
+ 449  lcl_nrdb_419    0.66%    passed     96.84%
+ 450  lcl_nrdb_420    1.55%    passed     89.29%
+ 451  lcl_nrdb_421    1.55%    passed     91.69%
+ 452  lcl_nrdb_422    1.55%    passed     89.29%
+ 453  lcl_nrdb_423    1.55%    passed     91.69%
+ 454  lcl_nrdb_424    1.55%    passed     91.69%
+ 455  lcl_nrdb_425    1.55%    passed     91.88%
+ 456  lcl_nrdb_426    0.44%    failed      1.07%
+ 457  lcl_nrdb_427    1.33%    passed     98.17%
+ 458  lcl_nrdb_428    1.11%    passed     41.20%
+ 459  lcl_nrdb_429    1.11%    passed     57.60%
+ 460  lcl_nrdb_430    1.33%    passed     85.86%
+ 461  lcl_nrdb_431    1.33%    passed     84.32%
+ 462  lcl_nrdb_432    1.33%    passed     83.76%
+ 463  lcl_nrdb_433    0.66%    passed     96.43%
+ 464  lcl_nrdb_434    1.11%    passed     94.95%
+ 465  lcl_nrdb_435    1.55%    passed     94.77%
+ 466  lcl_nrdb_436    0.66%    passed     99.74%
+ 467  lcl_nrdb_437    1.11%    passed     81.81%
+ 468  lcl_nrdb_438    0.66%    passed     99.74%
+ 469  lcl_nrdb_439    0.66%    passed     82.37%
+ 470  lcl_nrdb_440    0.66%    passed     99.51%
+ 471  lcl_nrdb_441    1.11%    passed     53.58%
+ 472  lcl_nrdb_442    0.88%    passed     81.97%
+ 473  lcl_nrdb_443    0.66%    passed     81.88%
+ 474  lcl_nrdb_444    0.66%    passed     81.88%
+ 475  lcl_nrdb_445    0.66%    passed     96.43%
+ 476  lcl_nrdb_446    0.66%    passed     97.91%
+ 477  lcl_nrdb_447    0.66%    passed     81.70%
+ 478  lcl_nrdb_448    1.11%    passed     51.75%
+ 479  lcl_nrdb_449    1.11%    passed     52.02%
+ 480  lcl_nrdb_450    1.11%    passed     49.53%
+ 481  lcl_nrdb_451    0.66%    passed     81.70%
+ 482  lcl_nrdb_452    0.66%    passed     80.98%
+ 483  lcl_nrdb_453    0.88%    passed     80.96%
+ 484  lcl_nrdb_454    1.99%    failed      0.01%
+ 485  lcl_nrdb_455    1.33%    passed     62.82%
+ 486  lcl_nrdb_456    1.11%    passed     38.64%
+ 487  lcl_nrdb_457    0.66%    passed     98.67%
+ 488  lcl_nrdb_458    0.66%    passed     99.56%
+ 489  lcl_nrdb_459    0.66%    passed     97.51%
+ 490  lcl_nrdb_460    0.66%    passed     95.82%
+ 491  lcl_nrdb_461    0.66%    passed     96.47%
+ 492  lcl_nrdb_462    0.88%    passed     77.95%
+ 493  lcl_nrdb_463    0.66%    passed     97.24%
+ 494  lcl_nrdb_464    1.11%    passed     51.92%
+ 495  lcl_nrdb_465    0.66%    passed     82.68%
+ 496  lcl_nrdb_466    1.11%    passed     49.50%
+ 497  lcl_nrdb_467    0.66%    passed     50.28%
+ 498  lcl_nrdb_468    0.66%    passed     88.30%
+ 499  lcl_nrdb_469    2.88%    passed     56.78%
+ 500  lcl_nrdb_470    1.33%    failed      1.64%
+ 501  lcl_nrdb_471    0.66%    passed     81.03%
+ 502  lcl_nrdb_472    0.66%    passed     93.28%
+ 503  lcl_nrdb_473    1.33%    passed     70.86%
+ 504  lcl_nrdb_474    1.33%    failed      1.64%
+ 505  lcl_nrdb_475    0.66%    passed     84.85%
+ 506  lcl_nrdb_476    1.11%    passed     80.09%
+ 507  lcl_nrdb_477    1.11%    passed     74.31%
+ 508  lcl_nrdb_478    1.11%    passed     78.93%
+ 509  lcl_nrdb_479    1.11%    passed     84.34%
+ 510  lcl_nrdb_480    1.11%    passed     80.33%
+ 511  lcl_nrdb_481    1.11%    passed     80.55%
+ 512  lcl_nrdb_482    0.44%    failed      0.38%
+ 513  lcl_nrdb_483    1.55%    passed     98.55%
+ 514  lcl_nrdb_484    1.33%    failed      1.64%
+ 515  lcl_nrdb_485    1.55%    passed     80.57%
+ 516  lcl_nrdb_486    1.55%    passed     71.46%
+ 517  lcl_nrdb_487    1.55%    passed     92.71%
+ 518  lcl_nrdb_488    0.44%    failed      0.37%
+ 519  lcl_nrdb_489    1.33%    passed     98.45%
+ 520  lcl_nrdb_490    1.11%    passed     98.45%
+ 521  lcl_nrdb_491    1.55%    passed     81.93%
+ 522  lcl_nrdb_492    1.55%    passed     79.98%
+ 523  lcl_nrdb_493    1.55%    passed     79.98%
+ 524  lcl_nrdb_494    1.55%    passed     66.26%
+ 525  lcl_nrdb_495    1.55%    passed     96.79%
+ 526  lcl_nrdb_496    1.55%    passed     99.60%
+ 527  lcl_nrdb_497    1.55%    passed     61.10%
+ 528  lcl_nrdb_498    0.88%    passed     93.13%
+ 529  lcl_nrdb_499    0.88%    passed     93.13%
+ 530  lcl_nrdb_500    0.88%    passed     94.59%
+ 531  lcl_nrdb_501    1.55%    passed     63.65%
+ 532  lcl_nrdb_502    1.55%    passed     71.47%
+ 533  lcl_nrdb_503    1.55%    passed     66.40%
+ 534  lcl_nrdb_504    1.11%    passed     98.36%
+ 535  lcl_nrdb_505    1.11%    passed     98.62%
+ 536  lcl_nrdb_506    1.11%    passed     98.22%
+ 537  lcl_nrdb_507    1.33%    passed     95.80%
+ 538  lcl_nrdb_508    0.44%    failed      0.13%
+ 539  lcl_nrdb_509    1.11%    passed     87.53%
+ 540  lcl_nrdb_510    1.11%    passed     82.89%
+ 541  lcl_nrdb_511    1.11%    passed     80.99%
+ 542  lcl_nrdb_512    1.11%    passed     89.68%
+ 543  lcl_nrdb_513    1.11%    passed     86.18%
+ 544  lcl_nrdb_514    0.44%    failed      0.30%
+ 545  lcl_nrdb_515    0.88%    passed     97.39%
+ 546  lcl_nrdb_516    0.88%    passed     93.57%
+ 547  lcl_nrdb_517    0.88%    passed     94.83%
+ 548  lcl_nrdb_518    0.88%    passed     94.29%
+ 549  lcl_nrdb_519    0.88%    passed     95.76%
+ 550  lcl_nrdb_520    0.88%    passed     94.97%
+ 551  lcl_nrdb_521    0.88%    passed     93.57%
+ 552  lcl_nrdb_522    0.88%    passed     95.19%
+ 553  lcl_nrdb_523    0.88%    passed     96.21%
+ 554  lcl_nrdb_524    0.88%    passed     95.16%
+ 555  lcl_nrdb_525    0.88%    passed     95.19%
+ 556  lcl_nrdb_526    0.88%    passed     95.19%
+ 557  lcl_nrdb_527    0.88%    passed     93.94%
+ 558  lcl_nrdb_528    0.88%    passed     96.21%
+ 559  lcl_nrdb_529    0.88%    passed     92.90%
+ 560  lcl_nrdb_530    0.88%    passed     96.02%
+ 561  lcl_nrdb_531    0.88%    passed     96.02%
+ 562  lcl_nrdb_532    0.88%    passed     95.36%
+ 563  lcl_nrdb_533    1.77%    passed     96.24%
+ 564  lcl_nrdb_534    0.44%    failed      0.34%
+ 565  lcl_nrdb_535    1.55%    passed     84.40%
+ 566  lcl_nrdb_536    1.33%    passed     95.54%
+ 567  lcl_nrdb_537    1.11%    passed     97.17%
+ 568  lcl_nrdb_538    0.44%    failed      0.87%
+ 569  lcl_nrdb_539    1.11%    passed     99.32%
+ 570  lcl_nrdb_540    1.11%    passed     98.36%
+ 571  lcl_nrdb_541    1.11%    passed     98.36%
+ 572  lcl_nrdb_542    1.11%    passed     98.36%
+ 573  lcl_nrdb_543    1.11%    passed     98.22%
+ 574  lcl_nrdb_544    1.11%    passed     98.22%
+ 575  lcl_nrdb_545    1.11%    passed     98.38%
+ 576  lcl_nrdb_546    1.11%    passed     98.34%
+ 577  lcl_nrdb_547    1.11%    passed     98.62%
+ 578  lcl_nrdb_548    1.11%    passed     98.22%
+ 579  lcl_nrdb_549    1.11%    passed     98.36%
+ 580  lcl_nrdb_550    1.11%    passed     98.36%
+ 581  lcl_nrdb_551    1.11%    passed     98.23%
+ 582  lcl_nrdb_552    1.11%    passed     98.62%
+ 583  lcl_nrdb_553    1.11%    passed     98.36%
+ 584  lcl_nrdb_554    1.11%    passed     99.18%
+ 585  lcl_nrdb_555    1.11%    passed     99.01%
+ 586  lcl_nrdb_556    1.33%    passed     94.48%
+ 587  lcl_nrdb_557    0.44%    failed      0.26%
+ 588  lcl_nrdb_558    1.33%    passed     91.52%
+ 589  lcl_nrdb_559    1.33%    passed     97.13%
+ 590  lcl_nrdb_560    1.33%    passed     96.87%
+ 591  lcl_nrdb_561    1.99%    passed     99.54%
+ 592  lcl_nrdb_562    1.33%    passed     89.07%
+ 593  lcl_nrdb_563    1.99%    passed     99.21%
+ 594  lcl_nrdb_564    1.33%    passed     91.50%
+ 595  lcl_nrdb_565    1.33%    passed     92.36%
+ 596  lcl_nrdb_566    0.44%    failed      0.05%
+ 597  lcl_nrdb_567    1.33%    passed     97.45%
+ 598  lcl_nrdb_568    1.55%    passed     91.00%
+ 599  lcl_nrdb_569    1.55%    passed     94.10%
+ 600  lcl_nrdb_570    1.33%    passed     94.48%
+ 601  lcl_nrdb_571    1.33%    passed     90.83%
+ 602  lcl_nrdb_572    0.88%    passed     94.59%
+ 603  lcl_nrdb_573    0.88%    passed     99.59%
+ 604  lcl_nrdb_574    0.44%    failed      0.87%
+ 605  lcl_nrdb_575    1.11%    passed     77.47%
+ 606  lcl_nrdb_576    1.11%    passed     77.47%
+ 607  lcl_nrdb_577    0.44%    failed      0.05%
+ 608  lcl_nrdb_578    1.11%    passed     92.27%
+ 609  lcl_nrdb_579    1.11%    passed     56.83%
+ 610  lcl_nrdb_580    1.11%    passed     89.92%
+ 611  lcl_nrdb_581    1.11%    passed     92.98%
+ 612  lcl_nrdb_582    0.44%    failed      0.38%
+ 613  lcl_nrdb_583    0.44%    failed      0.43%
+ 614  lcl_nrdb_584    1.33%    passed     96.74%
+ 615  lcl_nrdb_585    1.55%    passed     75.19%
+ 616  lcl_nrdb_586    1.11%    passed     97.38%
+ 617  lcl_nrdb_587    1.11%    passed     97.54%
+ 618  lcl_nrdb_588    1.11%    passed     97.54%
+ 619  lcl_nrdb_589    1.55%    passed     83.10%
+ 620  lcl_nrdb_590    1.55%    passed     98.81%
+ 621  lcl_nrdb_591    0.66%    passed     96.47%
+ 622  lcl_nrdb_592    0.66%    passed     92.54%
+ 623  lcl_nrdb_593    1.55%    passed     87.11%
+ 624  lcl_nrdb_594    1.55%    passed     87.11%
+ 625  lcl_nrdb_595    1.55%    passed     97.81%
+ 626  lcl_nrdb_596    1.11%    passed     86.18%
+ 627  lcl_nrdb_597    1.11%    passed     95.56%
+ 628  lcl_nrdb_598    1.33%    passed     43.66%
+ 629  lcl_nrdb_599    1.33%    passed     41.62%
+ 630  lcl_nrdb_600    1.11%    passed     95.52%
+ 631  lcl_nrdb_601    0.88%    passed     60.70%
+ 632  lcl_nrdb_602    1.33%    passed     55.26%
+ 633  lcl_nrdb_603    0.88%    passed     60.70%
+ 634  lcl_nrdb_604    1.11%    passed     94.32%
+ 635  lcl_nrdb_605    1.55%    passed     99.06%
+ 636  lcl_nrdb_606    1.55%    passed     35.36%
+ 637  lcl_nrdb_607    0.88%    failed      0.04%
+ 638  lcl_nrdb_608    0.88%    failed      0.06%
+ 639  lcl_nrdb_609    0.44%    failed      0.04%
+ 640  lcl_nrdb_610    1.11%    passed     97.98%
+ 641  lcl_nrdb_611    1.11%    passed     97.98%
+ 642  lcl_nrdb_612    0.88%    passed     91.77%
+ 643  lcl_nrdb_613    1.33%    passed     93.06%
+ 644  lcl_nrdb_614    1.33%    passed     98.12%
+ 645  lcl_nrdb_615    1.11%    passed     99.88%
+ 646  lcl_nrdb_616    1.33%    passed     99.77%
+ 647  lcl_nrdb_617    1.11%    passed     98.98%
+ 648  lcl_nrdb_618    1.11%    passed     99.96%
+ 649  lcl_nrdb_619    0.44%    failed      0.87%
+ 650  lcl_nrdb_620    0.44%    failed      1.07%
+ 651  lcl_nrdb_621    0.88%    failed      0.02%
+ 652  lcl_nrdb_622    0.44%    failed      0.04%
+ 653  lcl_nrdb_623    4.65%    passed     21.77%
+ 654  lcl_nrdb_624    1.55%    passed     99.13%
+ 655  lcl_nrdb_625    1.33%    passed     96.69%
+ 656  lcl_nrdb_626    4.65%    passed      6.14%
+ 657  lcl_nrdb_627    1.99%    failed      0.01%
+ 658  lcl_nrdb_628    2.88%    passed     99.00%
+ 659  lcl_nrdb_629    1.33%    passed     52.06%
+ 660  lcl_nrdb_630    0.66%    passed     99.75%
+ 661  lcl_nrdb_631    1.11%    passed     91.71%
+ 662  lcl_nrdb_632    1.55%    passed     92.70%
+ 663  lcl_nrdb_633    1.33%    failed      3.01%
+ 664  lcl_nrdb_634    1.11%    passed     38.08%
+ 665  lcl_nrdb_635    1.11%    failed      1.69%
+ 666  lcl_nrdb_636    0.66%    failed      0.82%
+ 667  lcl_nrdb_637    0.88%    passed     96.02%
+ 668  lcl_nrdb_638    1.77%    passed     96.83%
+ 669  lcl_nrdb_639    0.88%    passed     93.08%
+ 670  lcl_nrdb_640    0.88%    passed     92.61%
+ 671  lcl_nrdb_641    1.77%    passed     97.10%
+ 672  lcl_nrdb_642    1.11%    passed     98.16%
+ 673  lcl_uba_1       1.77%    passed     40.25%
+ 674  lcl_uba_2       1.33%    passed     99.17%
+ 675  lcl_uba_3       1.55%    passed      5.53%
+ 676  lcl_uba_4       1.11%    failed      0.27%
+ 677  lcl_uba_5       1.11%    failed      0.04%
+ 678  lcl_uba_6       0.44%    failed      0.05%
+ 679  lcl_uba_7       1.33%    passed     93.56%
+ 680  lcl_uba_8       1.11%    passed     82.63%
+ 681  lcl_uba_9       0.88%    passed     91.58%
+ 682  lcl_uba_10      1.33%    passed     86.69%
+ 683  lcl_uba_11      0.44%    failed      0.11%
+ 684  lcl_uba_12      1.55%    failed      2.89%
+ 685  lcl_uba_13      1.55%    passed     33.09%
+ 686  lcl_uba_14      1.33%    passed     99.17%
+ 687  lcl_uba_15      0.88%    passed     53.75%
+ 688  lcl_uba_16      0.44%    failed      0.19%
+ 689  lcl_uba_17      3.76%    passed     64.20%
+ 690  lcl_uba_18      1.11%    failed      1.83%
+ 691  lcl_uba_19      1.33%    passed     99.17%
+ 692  lcl_uba_20      1.11%    passed     54.12%
+ 693  lcl_uba_21      1.11%    failed      0.82%
+ 694  lcl_uba_22      0.44%    failed      0.09%
+ 695  lcl_uba_23      1.11%    passed     47.91%
+ 696  lcl_uba_24      0.44%    failed      0.25%
+ 697  lcl_uba_25      0.44%    failed      0.14%
+ 698  lcl_uba_26      1.11%    passed     47.91%
+ 699  lcl_uba_27      0.66%    passed     86.09%
+ 700  lcl_uba_28      1.11%    failed      1.03%
+ 701  lcl_uba_29      1.33%    passed     86.69%
+ 702  lcl_uba_30      0.44%    failed      0.61%
+ 703  lcl_uba_31      0.44%    failed      0.05%
+ 704  lcl_uba_32      1.55%    passed     33.09%
+ 705  lcl_uba_33      0.88%    passed     33.00%
+ 706  lcl_uba_34      0.44%    failed      0.00%
+ 707  lcl_uba_35      0.44%    failed      0.13%
+ 708  lcl_uba_36      1.11%    passed     59.61%
+ 709  lcl_uba_37      0.66%    passed     86.09%
+ 710  lcl_uba_38      1.11%    passed     47.91%
+ 711  lcl_uba_39      1.11%    passed     47.91%
+ 712  lcl_uba_40      0.44%    failed      0.19%
+ 713  lcl_uba_41      0.44%    failed      0.09%
+ 714  lcl_uba_42      0.44%    failed      1.48%
+ 715  lcl_uba_43      0.44%    failed      0.05%
+ 716  lcl_uba_44      1.11%    failed      0.04%
+ 717  lcl_uba_45      0.44%    failed      0.20%
+ 718  lcl_uba_46      0.44%    failed      0.17%
+ 719  lcl_uba_47      1.11%    passed     46.24%
+ 720  lcl_uba_48      1.33%    passed     93.56%
+ 721  lcl_uba_49      1.11%    failed      1.03%
+ 722  lcl_uba_50      0.44%    failed      0.06%
+ 723  lcl_uba_51      3.32%    passed     99.58%
+ 724  lcl_uba_52      0.44%    passed     10.92%
+ 725  lcl_uba_53      0.66%    passed     98.27%
+ 726  lcl_uba_54      0.44%    passed     14.85%
+ 727  lcl_uba_55      0.44%    failed      0.06%
+ 728  lcl_uba_56      0.44%    failed      0.64%
+ 729  lcl_uba_57      0.44%    failed      1.35%
+ 730  lcl_uba_58      0.44%    failed      0.19%
+ 731  lcl_uba_59      1.33%    passed     99.17%
+ 732  lcl_uba_60      0.44%    failed      0.06%
+ 733  lcl_uba_61      0.44%    failed      0.05%
+ 734  lcl_uba_62      1.33%    passed     93.56%
+ 735  lcl_uba_63      0.44%    failed      0.06%
+****  TOTAL           1.49%  145 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: lcl_nrdb_136 is identical to lcl_canon_2 but kept for subsequent analysis
+NOTE: lcl_nrdb_305 is identical to lcl_canon_3 but kept for subsequent analysis
+NOTE: lcl_nrdb_453 is identical to lcl_canon_4 but kept for subsequent analysis
+NOTE: lcl_nrdb_386 is identical to lcl_canon_5 but kept for subsequent analysis
+NOTE: lcl_nrdb_338 is identical to lcl_canon_6 but kept for subsequent analysis
+NOTE: lcl_nrdb_135 is identical to lcl_canon_7 but kept for subsequent analysis
+NOTE: lcl_nrdb_462 is identical to lcl_canon_10 but kept for subsequent analysis
+NOTE: lcl_nrdb_472 is identical to lcl_canon_11 but kept for subsequent analysis
+NOTE: lcl_nrdb_339 is identical to lcl_canon_12 but kept for subsequent analysis
+NOTE: lcl_canon_17 is identical to lcl_canon_13 but kept for subsequent analysis
+NOTE: lcl_nrdb_243 is identical to lcl_canon_14 but kept for subsequent analysis
+NOTE: lcl_canon_18 is identical to lcl_canon_15 but kept for subsequent analysis
+NOTE: lcl_nrdb_340 is identical to lcl_canon_21 but kept for subsequent analysis
+NOTE: lcl_nrdb_388 is identical to lcl_canon_22 but kept for subsequent analysis
+NOTE: lcl_prev_94 is identical to lcl_canon_23 but kept for subsequent analysis
+NOTE: lcl_nrdb_401 is identical to lcl_prev_21 but kept for subsequent analysis
+NOTE: lcl_nrdb_316 is identical to lcl_prev_35 but kept for subsequent analysis
+NOTE: lcl_nrdb_176 is identical to lcl_prev_86 but kept for subsequent analysis
+NOTE: lcl_nrdb_6 is identical to lcl_nrdb_1 but kept for subsequent analysis
+NOTE: lcl_nrdb_365 is identical to lcl_nrdb_3 but kept for subsequent analysis
+NOTE: lcl_nrdb_558 is identical to lcl_nrdb_13 but kept for subsequent analysis
+NOTE: lcl_nrdb_18 is identical to lcl_nrdb_17 but kept for subsequent analysis
+NOTE: lcl_nrdb_308 is identical to lcl_nrdb_19 but kept for subsequent analysis
+NOTE: lcl_nrdb_352 is identical to lcl_nrdb_25 but kept for subsequent analysis
+NOTE: lcl_nrdb_27 is identical to lcl_nrdb_26 but kept for subsequent analysis
+NOTE: lcl_nrdb_455 is identical to lcl_nrdb_31 but kept for subsequent analysis
+NOTE: lcl_uba_28 is identical to lcl_nrdb_39 but kept for subsequent analysis
+NOTE: lcl_nrdb_579 is identical to lcl_nrdb_44 but kept for subsequent analysis
+NOTE: lcl_nrdb_154 is identical to lcl_nrdb_48 but kept for subsequent analysis
+NOTE: lcl_nrdb_443 is identical to lcl_nrdb_57 but kept for subsequent analysis
+NOTE: lcl_nrdb_301 is identical to lcl_nrdb_58 but kept for subsequent analysis
+NOTE: lcl_nrdb_115 is identical to lcl_nrdb_87 but kept for subsequent analysis
+NOTE: lcl_nrdb_467 is identical to lcl_nrdb_94 but kept for subsequent analysis
+NOTE: lcl_nrdb_113 is identical to lcl_nrdb_97 but kept for subsequent analysis
+NOTE: lcl_nrdb_324 is identical to lcl_nrdb_98 but kept for subsequent analysis
+NOTE: lcl_uba_36 is identical to lcl_nrdb_123 but kept for subsequent analysis
+NOTE: lcl_nrdb_633 is identical to lcl_nrdb_124 but kept for subsequent analysis
+NOTE: lcl_nrdb_132 is identical to lcl_nrdb_131 but kept for subsequent analysis
+NOTE: lcl_nrdb_562 is identical to lcl_nrdb_142 but kept for subsequent analysis
+NOTE: lcl_nrdb_309 is identical to lcl_nrdb_143 but kept for subsequent analysis
+NOTE: lcl_nrdb_584 is identical to lcl_nrdb_183 but kept for subsequent analysis
+NOTE: lcl_nrdb_563 is identical to lcl_nrdb_185 but kept for subsequent analysis
+NOTE: lcl_nrdb_498 is identical to lcl_nrdb_187 but kept for subsequent analysis
+NOTE: lcl_nrdb_421 is identical to lcl_nrdb_193 but kept for subsequent analysis
+NOTE: lcl_nrdb_258 is identical to lcl_nrdb_195 but kept for subsequent analysis
+NOTE: lcl_nrdb_599 is identical to lcl_nrdb_203 but kept for subsequent analysis
+NOTE: lcl_nrdb_275 is identical to lcl_nrdb_205 but kept for subsequent analysis
+NOTE: lcl_nrdb_280 is identical to lcl_nrdb_208 but kept for subsequent analysis
+NOTE: lcl_nrdb_363 is identical to lcl_nrdb_224 but kept for subsequent analysis
+NOTE: lcl_nrdb_232 is identical to lcl_nrdb_231 but kept for subsequent analysis
+NOTE: lcl_nrdb_261 is identical to lcl_nrdb_260 but kept for subsequent analysis
+NOTE: lcl_nrdb_263 is identical to lcl_nrdb_262 but kept for subsequent analysis
+NOTE: lcl_nrdb_269 is identical to lcl_nrdb_268 but kept for subsequent analysis
+NOTE: lcl_nrdb_508 is identical to lcl_nrdb_273 but kept for subsequent analysis
+NOTE: lcl_nrdb_396 is identical to lcl_nrdb_278 but kept for subsequent analysis
+NOTE: lcl_nrdb_319 is identical to lcl_nrdb_279 but kept for subsequent analysis
+NOTE: lcl_nrdb_566 is identical to lcl_nrdb_283 but kept for subsequent analysis
+NOTE: lcl_nrdb_577 is identical to lcl_nrdb_285 but kept for subsequent analysis
+NOTE: lcl_nrdb_628 is identical to lcl_nrdb_289 but kept for subsequent analysis
+NOTE: lcl_nrdb_485 is identical to lcl_nrdb_290 but kept for subsequent analysis
+NOTE: lcl_nrdb_516 is identical to lcl_nrdb_298 but kept for subsequent analysis
+NOTE: lcl_uba_10 is identical to lcl_nrdb_303 but kept for subsequent analysis
+NOTE: lcl_nrdb_512 is identical to lcl_nrdb_321 but kept for subsequent analysis
+NOTE: lcl_uba_1 is identical to lcl_nrdb_326 but kept for subsequent analysis
+NOTE: lcl_nrdb_489 is identical to lcl_nrdb_346 but kept for subsequent analysis
+NOTE: lcl_nrdb_367 is identical to lcl_nrdb_362 but kept for subsequent analysis
+NOTE: lcl_nrdb_377 is identical to lcl_nrdb_372 but kept for subsequent analysis
+NOTE: lcl_nrdb_427 is identical to lcl_nrdb_395 but kept for subsequent analysis
+NOTE: lcl_nrdb_463 is identical to lcl_nrdb_410 but kept for subsequent analysis
+NOTE: lcl_nrdb_435 is identical to lcl_nrdb_411 but kept for subsequent analysis
+NOTE: lcl_nrdb_416 is identical to lcl_nrdb_415 but kept for subsequent analysis
+NOTE: lcl_nrdb_422 is identical to lcl_nrdb_420 but kept for subsequent analysis
+NOTE: lcl_nrdb_620 is identical to lcl_nrdb_426 but kept for subsequent analysis
+NOTE: lcl_nrdb_445 is identical to lcl_nrdb_433 but kept for subsequent analysis
+NOTE: lcl_nrdb_438 is identical to lcl_nrdb_436 but kept for subsequent analysis
+NOTE: lcl_nrdb_451 is identical to lcl_nrdb_447 but kept for subsequent analysis
+NOTE: lcl_nrdb_591 is identical to lcl_nrdb_461 but kept for subsequent analysis
+NOTE: lcl_nrdb_493 is identical to lcl_nrdb_492 but kept for subsequent analysis
+NOTE: lcl_nrdb_540 is identical to lcl_nrdb_504 but kept for subsequent analysis
+NOTE: lcl_nrdb_547 is identical to lcl_nrdb_505 but kept for subsequent analysis
+NOTE: lcl_nrdb_543 is identical to lcl_nrdb_506 but kept for subsequent analysis
+NOTE: lcl_nrdb_596 is identical to lcl_nrdb_513 but kept for subsequent analysis
+NOTE: lcl_nrdb_525 is identical to lcl_nrdb_522 but kept for subsequent analysis
+NOTE: lcl_nrdb_528 is identical to lcl_nrdb_523 but kept for subsequent analysis
+NOTE: lcl_nrdb_531 is identical to lcl_nrdb_530 but kept for subsequent analysis
+NOTE: lcl_nrdb_574 is identical to lcl_nrdb_538 but kept for subsequent analysis
+NOTE: lcl_nrdb_570 is identical to lcl_nrdb_556 but kept for subsequent analysis
+NOTE: lcl_nrdb_576 is identical to lcl_nrdb_575 but kept for subsequent analysis
+NOTE: lcl_nrdb_588 is identical to lcl_nrdb_587 but kept for subsequent analysis
+NOTE: lcl_nrdb_594 is identical to lcl_nrdb_593 but kept for subsequent analysis
+NOTE: lcl_nrdb_603 is identical to lcl_nrdb_601 but kept for subsequent analysis
+NOTE: lcl_nrdb_622 is identical to lcl_nrdb_609 but kept for subsequent analysis
+NOTE: lcl_nrdb_611 is identical to lcl_nrdb_610 but kept for subsequent analysis
+NOTE: lcl_uba_14 is identical to lcl_uba_2 but kept for subsequent analysis
+NOTE: lcl_uba_44 is identical to lcl_uba_5 but kept for subsequent analysis
+NOTE: lcl_uba_32 is identical to lcl_uba_13 but kept for subsequent analysis
+NOTE: lcl_uba_40 is identical to lcl_uba_16 but kept for subsequent analysis
+NOTE: lcl_uba_41 is identical to lcl_uba_22 but kept for subsequent analysis
+NOTE: lcl_uba_37 is identical to lcl_uba_27 but kept for subsequent analysis
+NOTE: lcl_uba_43 is identical to lcl_uba_31 but kept for subsequent analysis
+NOTE: lcl_uba_60 is identical to lcl_uba_55 but kept for subsequent analysis
+NOTE: 66 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: lcl_nrdb_419 (identical to lcl_canon_12) is ignored but added at the end
+NOTE: lcl_nrdb_335 (identical to lcl_canon_13) is ignored but added at the end
+NOTE: lcl_nrdb_336 (identical to lcl_canon_13) is ignored but added at the end
+NOTE: lcl_nrdb_337 (identical to lcl_canon_13) is ignored but added at the end
+NOTE: lcl_nrdb_382 (identical to lcl_canon_13) is ignored but added at the end
+NOTE: lcl_canon_19 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_prev_1 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_nrdb_242 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_nrdb_344 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_nrdb_383 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_nrdb_384 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_nrdb_385 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_nrdb_397 (identical to lcl_canon_15) is ignored but added at the end
+NOTE: lcl_nrdb_239 (identical to lcl_canon_23) is ignored but added at the end
+NOTE: lcl_nrdb_240 (identical to lcl_canon_23) is ignored but added at the end
+NOTE: lcl_nrdb_454 (identical to lcl_canon_23) is ignored but added at the end
+NOTE: lcl_nrdb_627 (identical to lcl_canon_23) is ignored but added at the end
+NOTE: lcl_nrdb_403 (identical to lcl_prev_21) is ignored but added at the end
+NOTE: lcl_nrdb_306 (identical to lcl_prev_86) is ignored but added at the end
+NOTE: lcl_nrdb_366 (identical to lcl_nrdb_1) is ignored but added at the end
+NOTE: lcl_nrdb_394 (identical to lcl_nrdb_25) is ignored but added at the end
+NOTE: lcl_uba_49 (identical to lcl_nrdb_39) is ignored but added at the end
+NOTE: lcl_nrdb_444 (identical to lcl_nrdb_57) is ignored but added at the end
+NOTE: lcl_nrdb_333 (identical to lcl_nrdb_87) is ignored but added at the end
+NOTE: lcl_nrdb_334 (identical to lcl_nrdb_87) is ignored but added at the end
+NOTE: lcl_nrdb_345 (identical to lcl_nrdb_87) is ignored but added at the end
+NOTE: lcl_nrdb_348 (identical to lcl_nrdb_87) is ignored but added at the end
+NOTE: lcl_uba_7 (identical to lcl_nrdb_87) is ignored but added at the end
+NOTE: lcl_uba_48 (identical to lcl_nrdb_87) is ignored but added at the end
+NOTE: lcl_uba_62 (identical to lcl_nrdb_87) is ignored but added at the end
+NOTE: lcl_uba_23 (identical to lcl_nrdb_97) is ignored but added at the end
+NOTE: lcl_uba_26 (identical to lcl_nrdb_97) is ignored but added at the end
+NOTE: lcl_uba_38 (identical to lcl_nrdb_97) is ignored but added at the end
+NOTE: lcl_uba_39 (identical to lcl_nrdb_97) is ignored but added at the end
+NOTE: lcl_nrdb_413 (identical to lcl_nrdb_143) is ignored but added at the end
+NOTE: lcl_nrdb_499 (identical to lcl_nrdb_187) is ignored but added at the end
+NOTE: lcl_nrdb_423 (identical to lcl_nrdb_193) is ignored but added at the end
+NOTE: lcl_nrdb_424 (identical to lcl_nrdb_193) is ignored but added at the end
+NOTE: lcl_uba_58 (identical to lcl_nrdb_205) is ignored but added at the end
+NOTE: lcl_nrdb_282 (identical to lcl_nrdb_208) is ignored but added at the end
+NOTE: lcl_nrdb_270 (identical to lcl_nrdb_268) is ignored but added at the end
+NOTE: lcl_uba_35 (identical to lcl_nrdb_273) is ignored but added at the end
+NOTE: lcl_nrdb_514 (identical to lcl_nrdb_278) is ignored but added at the end
+NOTE: lcl_uba_6 (identical to lcl_nrdb_283) is ignored but added at the end
+NOTE: lcl_nrdb_521 (identical to lcl_nrdb_298) is ignored but added at the end
+NOTE: lcl_uba_29 (identical to lcl_nrdb_303) is ignored but added at the end
+NOTE: lcl_nrdb_389 (identical to lcl_nrdb_362) is ignored but added at the end
+NOTE: lcl_nrdb_391 (identical to lcl_nrdb_362) is ignored but added at the end
+NOTE: lcl_nrdb_393 (identical to lcl_nrdb_362) is ignored but added at the end
+NOTE: lcl_nrdb_418 (identical to lcl_nrdb_362) is ignored but added at the end
+NOTE: lcl_nrdb_470 (identical to lcl_nrdb_362) is ignored but added at the end
+NOTE: lcl_nrdb_474 (identical to lcl_nrdb_362) is ignored but added at the end
+NOTE: lcl_nrdb_484 (identical to lcl_nrdb_362) is ignored but added at the end
+NOTE: lcl_nrdb_541 (identical to lcl_nrdb_504) is ignored but added at the end
+NOTE: lcl_nrdb_542 (identical to lcl_nrdb_504) is ignored but added at the end
+NOTE: lcl_nrdb_549 (identical to lcl_nrdb_504) is ignored but added at the end
+NOTE: lcl_nrdb_550 (identical to lcl_nrdb_504) is ignored but added at the end
+NOTE: lcl_nrdb_553 (identical to lcl_nrdb_504) is ignored but added at the end
+NOTE: lcl_nrdb_548 (identical to lcl_nrdb_506) is ignored but added at the end
+NOTE: lcl_nrdb_526 (identical to lcl_nrdb_522) is ignored but added at the end
+NOTE: lcl_nrdb_637 (identical to lcl_nrdb_530) is ignored but added at the end
+NOTE: lcl_nrdb_619 (identical to lcl_nrdb_538) is ignored but added at the end
+NOTE: lcl_uba_19 (identical to lcl_uba_2) is ignored but added at the end
+NOTE: lcl_uba_59 (identical to lcl_uba_2) is ignored but added at the end
+NOTE: lcl_uba_61 (identical to lcl_uba_31) is ignored but added at the end
+NOTE: lcl_uba_63 (identical to lcl_uba_55) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to canon_prev_nrdb_uba.fasta.aln.trim.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.405 seconds
+NOTE: ModelFinder requires 460 MB RAM!
+ModelFinder will test 546 protein models (sample size: 452) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  Dayhoff       84640.159    1335 171950.317   3739070.317  177442.083
+  2  Dayhoff+I     83114.370    1336 168900.740   3741364.740  174396.619
+  3  Dayhoff+G4    78812.202    1336 160296.405   3732760.405  165792.284
+  4  Dayhoff+I+G4  78697.160    1337 160068.320   3737880.320  165568.313
+  5  Dayhoff+R2    80165.987    1337 163005.974   3740817.974  168505.967

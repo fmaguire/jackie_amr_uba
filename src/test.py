@@ -1,58 +1,63 @@
 import unittest
-from ete3 import NCBITaxa
-from functions import *
+import functions
 
-ncbi = NCBITaxa()
-test_dir = './test/raw/'
-ref_sequence_path = test_dir + 'mcr-canonical.fasta' 
+#from ete3 import NCBITaxa
+
+#ncbi = NCBITaxa()
+test_dir = '/home/jax/focal/data/analyses/metagenome/raw/'
+#canonical  kpc.fasta  mcr.fasta  ndm.fasta  oxa.fasta
+# ncbi-nrdb
+# prevalence  card_prevalence.txt  protein_fasta_protein_homolog_model_variants.fasta
+# rgi-uba
+ref_sequence_path = test_dir + 'canonical/oxa.fasta'
 
 class blast_test(unittest.TestCase):
 
     def test_all(self):
-        canon_fasta = convert_headers(ref_sequence_path,
+        canon_fasta = functions.convert_headers(ref_sequence_path,
                         './tmp/mcr/canon/results.fasta',
                         'canon')
-        map_file = make_index_map(test_dir + 'mcr-canonical.fasta',
+        map_file = functions.make_index_map(test_dir + 'mcr-canonical.fasta',
                        './tmp/mcr/canon/results.map')
 
-        blast_db=make_blastp_db(test_dir + 'prevalence.fasta',
+        blast_db=functions.make_blastp_db(test_dir + 'prevalence.fasta',
                        './tmp/mcr/prevalence/db/prev')
-        blast_result = blastp(test_dir + 'mcr-canonical.fasta',
+        blast_result = functions.blastp(test_dir + 'mcr-canonical.fasta',
                './tmp/mcr/prevalence/db/prev',
                './tmp/mcr/prevalence/results.blast' )
-        map_file = get_max_info_blast_rep(blast_result)
-        fasta = blast_map_to_fasta(map_file, 'prev')
-        clstr = cluster_at(fasta, 95)
+        map_file = functions.get_max_info_blast_rep(blast_result)
+        fasta = functions.blast_map_to_fasta(map_file, 'prev')
+        clstr = functions.cluster_at(fasta, 95)
         prev_fasta=clstr.file_name
-        fasttree = run_fasttree(run_trimal(run_mafft(clstr)))
+        fasttree = functions.run_fasttree(functions.run_trimal(functions.run_mafft(clstr)))
         
-        blast_result = blastp_multi(ref_sequence_path,
+        blast_result = functions.blastp_multi(ref_sequence_path,
                      test_dir + 'ncbi-nrdb/',
                      './tmp/mcr/nrdb/results.blast')
-        map_file = get_max_info_blast_rep(blast_result)
-        fasta = blast_map_to_fasta(map_file, 'nrdb')
+        map_file = functions.get_max_info_blast_rep(blast_result)
+        fasta = functions.blast_map_to_fasta(map_file, 'nrdb')
         nrdb_fasta=fasta.file_name
-        aln = run_mafft(fasta)
-        trim = run_trimal(aln)
-        fasttree = run_fasttree(trim)
+        aln = functions.run_mafft(fasta)
+        trim = functions.run_trimal(aln)
+        fasttree = functions.run_fasttree(trim)
         
         
-        db_fasta_file=make_uba_fasta(test_dir + 'rgi-uba',
+        db_fasta_file=functions.make_uba_fasta(test_dir + 'rgi-uba',
                                  'MCR phosphoethanolamine',
                                  './tmp/mcr/uba/db.fasta')
-        blastdb=make_blastp_db(db_fasta_file.file_name,
+        blastdb=functions.make_blastp_db(db_fasta_file.file_name,
                        './tmp/mcr/uba/db/uba')
 
-        blast_result = blastp(ref_sequence_path,
+        blast_result = functions.blastp(ref_sequence_path,
                                blastdb.file_name,
                                './tmp/mcr/uba/result.blast')
 
-        map_file = get_max_info_blast_rep(blast_result)
-        fasta = blast_map_to_fasta(map_file, 'uba')
+        map_file = functions.get_max_info_blast_rep(blast_result)
+        fasta = functions.blast_map_to_fasta(map_file, 'uba')
         uba_fasta=fasta.file_name
-        aln = run_mafft(fasta)
-        trim = run_trimal(aln)
-        fasttree = run_fasttree(trim)
+        aln = functions.run_mafft(fasta)
+        trim = functions.run_trimal(aln)
+        fasttree = functions.run_fasttree(trim)
         
         filenames = [canon_fasta.file_name,
                      prev_fasta,

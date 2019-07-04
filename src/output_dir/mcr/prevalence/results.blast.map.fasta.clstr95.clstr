@@ -1,0 +1,115 @@
+>Cluster 0
+0	565aa, >lcl|prev|21... *
+1	565aa, >lcl|prev|32... at 99.29%
+>Cluster 1
+0	547aa, >lcl|prev|94... *
+>Cluster 2
+0	541aa, >lcl|prev|1... *
+1	541aa, >lcl|prev|2... at 100.00%
+2	541aa, >lcl|prev|3... at 100.00%
+3	541aa, >lcl|prev|4... at 100.00%
+4	541aa, >lcl|prev|5... at 100.00%
+5	541aa, >lcl|prev|6... at 99.82%
+6	541aa, >lcl|prev|7... at 100.00%
+7	541aa, >lcl|prev|8... at 99.82%
+8	541aa, >lcl|prev|9... at 99.82%
+9	541aa, >lcl|prev|10... at 100.00%
+10	541aa, >lcl|prev|11... at 100.00%
+11	541aa, >lcl|prev|12... at 100.00%
+12	502aa, >lcl|prev|13... at 100.00%
+13	541aa, >lcl|prev|15... at 99.82%
+14	541aa, >lcl|prev|16... at 100.00%
+15	541aa, >lcl|prev|17... at 100.00%
+16	491aa, >lcl|prev|22... at 99.80%
+17	541aa, >lcl|prev|26... at 99.82%
+18	541aa, >lcl|prev|31... at 100.00%
+19	522aa, >lcl|prev|88... at 97.51%
+20	516aa, >lcl|prev|93... at 99.81%
+21	541aa, >lcl|prev|95... at 99.82%
+22	541aa, >lcl|prev|97... at 99.45%
+23	541aa, >lcl|prev|98... at 100.00%
+24	541aa, >lcl|prev|99... at 99.82%
+25	541aa, >lcl|prev|100... at 100.00%
+26	540aa, >lcl|prev|101... at 100.00%
+27	541aa, >lcl|prev|102... at 99.82%
+28	541aa, >lcl|prev|103... at 99.82%
+29	541aa, >lcl|prev|104... at 100.00%
+30	541aa, >lcl|prev|105... at 99.82%
+31	541aa, >lcl|prev|106... at 99.82%
+32	541aa, >lcl|prev|107... at 99.82%
+33	541aa, >lcl|prev|108... at 100.00%
+>Cluster 3
+0	541aa, >lcl|prev|14... *
+1	541aa, >lcl|prev|18... at 99.45%
+2	541aa, >lcl|prev|19... at 99.63%
+3	541aa, >lcl|prev|23... at 99.45%
+4	541aa, >lcl|prev|24... at 99.63%
+5	541aa, >lcl|prev|25... at 99.45%
+6	541aa, >lcl|prev|27... at 99.26%
+7	541aa, >lcl|prev|28... at 99.63%
+8	541aa, >lcl|prev|29... at 99.45%
+9	541aa, >lcl|prev|30... at 99.63%
+10	541aa, >lcl|prev|33... at 99.26%
+11	541aa, >lcl|prev|34... at 99.45%
+12	541aa, >lcl|prev|87... at 99.08%
+13	541aa, >lcl|prev|89... at 99.45%
+14	541aa, >lcl|prev|90... at 99.63%
+15	541aa, >lcl|prev|92... at 99.45%
+>Cluster 4
+0	523aa, >lcl|prev|20... at 99.81%
+1	541aa, >lcl|prev|86... *
+2	541aa, >lcl|prev|96... at 100.00%
+>Cluster 5
+0	538aa, >lcl|prev|91... *
+>Cluster 6
+0	536aa, >lcl|prev|35... *
+1	536aa, >lcl|prev|36... at 98.69%
+2	536aa, >lcl|prev|37... at 99.81%
+3	536aa, >lcl|prev|38... at 99.25%
+4	536aa, >lcl|prev|39... at 100.00%
+5	536aa, >lcl|prev|40... at 99.44%
+6	536aa, >lcl|prev|41... at 100.00%
+7	536aa, >lcl|prev|42... at 99.81%
+8	536aa, >lcl|prev|43... at 99.81%
+9	536aa, >lcl|prev|44... at 100.00%
+10	536aa, >lcl|prev|45... at 99.44%
+11	536aa, >lcl|prev|46... at 99.81%
+12	536aa, >lcl|prev|47... at 99.63%
+13	536aa, >lcl|prev|48... at 100.00%
+14	536aa, >lcl|prev|49... at 100.00%
+15	536aa, >lcl|prev|50... at 100.00%
+16	536aa, >lcl|prev|51... at 99.63%
+17	536aa, >lcl|prev|52... at 99.63%
+18	536aa, >lcl|prev|53... at 99.63%
+19	536aa, >lcl|prev|54... at 99.81%
+20	536aa, >lcl|prev|55... at 99.81%
+21	536aa, >lcl|prev|56... at 100.00%
+22	536aa, >lcl|prev|57... at 99.44%
+23	536aa, >lcl|prev|58... at 98.69%
+24	536aa, >lcl|prev|59... at 98.88%
+25	536aa, >lcl|prev|60... at 98.51%
+26	536aa, >lcl|prev|61... at 98.51%
+27	536aa, >lcl|prev|62... at 98.51%
+28	536aa, >lcl|prev|63... at 98.69%
+29	536aa, >lcl|prev|64... at 98.69%
+30	536aa, >lcl|prev|65... at 98.69%
+31	536aa, >lcl|prev|66... at 98.51%
+32	536aa, >lcl|prev|67... at 98.69%
+33	536aa, >lcl|prev|68... at 98.51%
+34	536aa, >lcl|prev|69... at 98.51%
+35	536aa, >lcl|prev|70... at 98.51%
+36	536aa, >lcl|prev|71... at 98.51%
+37	536aa, >lcl|prev|72... at 98.32%
+38	536aa, >lcl|prev|73... at 98.51%
+39	536aa, >lcl|prev|74... at 99.25%
+40	536aa, >lcl|prev|75... at 100.00%
+41	536aa, >lcl|prev|76... at 100.00%
+42	536aa, >lcl|prev|77... at 99.63%
+43	536aa, >lcl|prev|78... at 99.81%
+44	536aa, >lcl|prev|79... at 100.00%
+45	536aa, >lcl|prev|80... at 100.00%
+46	536aa, >lcl|prev|81... at 98.69%
+47	536aa, >lcl|prev|82... at 100.00%
+48	536aa, >lcl|prev|83... at 98.69%
+49	536aa, >lcl|prev|84... at 99.44%
+50	536aa, >lcl|prev|85... at 99.63%
