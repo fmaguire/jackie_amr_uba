@@ -1,7 +1,5 @@
-.idea
 src/test
-src/__pycache__
 src/taxdump.tar.gz
 src/tmp
-venv
 src/output_dir
+**/.idea
