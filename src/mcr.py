@@ -68,9 +68,33 @@ def run_all():
                      uba_fasta]
 
     final = functions.concatenate_files(files, output_dir + '/mcr/canon_prev_nrdb_uba.fasta')
-
+#./output_dir/sqlite_metatdata
     aln = functions.run_mafft(final)
     trim = functions.run_trimal(aln)
     fasttree = functions.run_fasttree(trim)
     iqtree = functions.run_iqtree(trim)    
+    #todo create ubametadata table and a prev table
+    functions.create_table('./output_dir/sqlite_metatdata', 'mcr_canon')
+    functions.insert_all_file('./output_dir/sqlite_metatdata', 'mcr_canon', './output_dir/mcr/canon/results.map')
+    functions.create_table('./output_dir/sqlite_metatdata', 'mcr_prev')
+    functions.insert_all_file('./output_dir/sqlite_metatdata', 'mcr_prev', './output_dir/mcr/prevalence/results.blast.map')
+    functions.make_prev_db('./output_dir/sqlite_metatdata', 'prev_meta')
+    functions.create_table('./output_dir/sqlite_metatdata', 'mcr_nrdb')
+    functions.insert_all_file('./output_dir/sqlite_metatdata', 'mcr_nrdb', './output_dir/mcr/nrdb/results.blast.map')
+    functions.create_table('./output_dir/sqlite_metatdata', 'mcr_uba')
+    functions.insert_all_file('./output_dir/sqlite_metatdata', 'mcr_uba', './output_dir/mcr/uba/result.blast.map')
+    #functions.print_table('./output_dir/sqlite_metatdata','prev_meta')
+    #functions.print_table('./output_dir/sqlite_metatdata', 'mcr_nrdb')
+    #print(functions.get_nrdb_lineage(functions.select_id_from_table('./output_dir/sqlite_metatdata', 'mcr_nrdb', '620')))
+
+    #print(str(functions.select_id_from_table('./output_dir/sqlite_metatdata', 'mcr_nrdb', '620')[1].split('\t').pop())+ 'efrewfew')
+
+    #print(functions.get_canon_lineage(functions.select_id_from_table('./output_dir/sqlite_metatdata', 'mcr_canon', '2')))
+
+    #print("wfwefewfew" + str(functions.read_file(iqtree)))
+    tree=functions.ete_treeify(functions.car(functions.read_file(iqtree)))
+
+    tree2 = functions.annotate(tree, 'mcr' ,'./output_dir/sqlite_metatdata')
+    functions.render(tree2)
+
 run_all()

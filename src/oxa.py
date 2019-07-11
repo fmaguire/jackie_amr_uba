@@ -18,6 +18,7 @@ def run_all():
     canon_fasta = functions.convert_headers(ref_sequence_path,
                                             output_dir + 'oxa/canon/results.fasta',
                                             'canon')
+    clstr_canon = functions.cluster_at(canon_fasta, 99)
     map_file = functions.make_index_map(ref_sequence_path,
                        output_dir + 'oxa/canon/results.map')
 
@@ -31,24 +32,24 @@ def run_all():
 
     blast_result = functions.blastp(ref_sequence_path,
                                blastdb.file_name,
-                               output_dir + 'oxa/uba/result.blast')
+                               output_dir + 'oxa/uba/result.blast', '1e-180', '90')
 
     map_file = functions.get_max_info_blast_rep(blast_result)
     fasta = functions.blast_map_to_fasta(map_file, 'uba')
-    uba_fasta=fasta.file_name
-    aln = functions.run_mafft(fasta)
+    clstr = functions.cluster_at(fasta, 97)
+    uba_fasta=clstr
+    aln = functions.run_mafft(clstr)
     trim = functions.run_trimal(aln)
     fasttree = functions.run_fasttree(trim)
         
-    filenames = [canon_fasta.file_name,
+    filenames = [clstr_canon,
                      uba_fasta]
 
-    with open('./tmp/canon_prev_nrdb_uba.fasta', 'w') as outfile:
-        for fname in filenames:
-            with open(fname) as infile:
-                for line in infile:
-                    outfile.write(line)
+    final = functions.concatenate_files(filenames, output_dir + '/oxa/canon_uba.fasta')
 
+    aln = functions.run_mafft(final)
+    trim = functions.run_trimal(aln)
+    fasttree = functions.run_fasttree(trim)
 run_all()
 #        aln = run_mafft('./tmp/canon_prev_nrdb_uba.fasta')
 #        trim = run_trimal(aln.file_name)

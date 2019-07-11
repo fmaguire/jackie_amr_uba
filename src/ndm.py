@@ -28,8 +28,8 @@ def run_all():
                output_dir + 'ndm/prevalence/results.blast', '1e-80', '40')
     map_file = functions.get_max_info_blast_rep(blast_result)
     fasta = functions.blast_map_to_fasta(map_file, 'prev')
-    clstr = functions.cluster_at(fasta, 100)
-    prev_fasta=clstr.file_name
+    clstr = functions.cluster_at(fasta, 99)
+    prev_fasta=clstr
     fasttree = functions.run_fasttree(functions.run_trimal(functions.run_mafft(clstr)))
 
     blast_result = functions.blastp_multi(ref_sequence_path,
@@ -37,8 +37,9 @@ def run_all():
                      output_dir + 'ndm/nrdb/results.blast')
     map_file = functions.get_max_info_blast_rep(blast_result)
     fasta = functions.blast_map_to_fasta(map_file, 'nrdb')
-    nrdb_fasta=fasta.file_name
-    aln = functions.run_mafft(fasta)
+    clstr = functions.cluster_at(fasta, 99)
+    nrdb_fasta=clstr
+    aln = functions.run_mafft(clstr)
     trim = functions.run_trimal(aln)
     fasttree = functions.run_fasttree(trim)
         
@@ -55,23 +56,23 @@ def run_all():
 
     map_file = functions.get_max_info_blast_rep(blast_result)
     fasta = functions.blast_map_to_fasta(map_file, 'uba')
-    uba_fasta=fasta.file_name
+    uba_fasta=fasta
     aln = functions.run_mafft(fasta)
     trim = functions.run_trimal(aln)
     fasttree = functions.run_fasttree(trim)
         
-    filenames = [canon_fasta.file_name,
+    filenames = [canon_fasta,
                      prev_fasta,
                      nrdb_fasta,
                      uba_fasta]
 
-    with open('./tmp/canon_prev_nrdb_uba.fasta', 'w') as outfile:
-        for fname in filenames:
-            with open(fname) as infile:
-                for line in infile:
-                    outfile.write(line)
-
+    final = functions.concatenate_files(filenames, output_dir + '/ndm/canon_prev_nrdb_uba.fasta')
+    
+    aln = functions.run_mafft(final)
+    trim = functions.run_trimal(aln)
+    fasttree = functions.run_fasttree(trim)
+    
 run_all()
 #        aln = run_mafft('./tmp/canon_prev_nrdb_uba.fasta')
-#        trim = run_trimal(aln.file_name)
-#        fasttree = run_fasttree(trim.file_name)
+#        trim = run_trimal(aln)
+#        fasttree = run_fasttree(trim)

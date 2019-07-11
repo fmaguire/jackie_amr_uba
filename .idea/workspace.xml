@@ -2,24 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99eddf32-f69a-4eb4-966c-9ebeeaa362df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/canon/convert_headers.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/canon/make_index_map.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/general/blast_to_fasta.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/general/max_blast_results_with_index.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/nrdb/blast_nr.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/blast_to_index.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/fix_prev_headers.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/make_nr_fasta.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/make_nr_index.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/make_prev_index.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/make_uba_fasta_db.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/make_uba_fasta_db_direct.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/make_uba_index.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/max_uniq_blast_results.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/old/uniq_blast_results.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/scripts/uba/make_uba_fasta_db_direct.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/amr_uba.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/amr_uba.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mcr.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mcr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ndm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ndm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/canon_prev_nrdb_uba.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/canon_prev_nrdb_uba.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/canon_prev_nrdb_uba.fasta.aln" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/canon_prev_nrdb_uba.fasta.aln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/canon_prev_nrdb_uba.fasta.aln.trim" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/canon_prev_nrdb_uba.fasta.aln.trim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/canon_prev_nrdb_uba.fasta.aln.trim.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/nrdb/results.blast.map.fasta.aln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/nrdb/results.blast.map.fasta.aln.trim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/nrdb/results.blast.map.fasta.aln.trim.fast.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/db/prev.pin" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/db/prev.pin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map.fasta.clstr95" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map.fasta.clstr95.aln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map.fasta.clstr95.aln.trim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map.fasta.clstr95.aln.trim.fast.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/prevalence/results.blast.map.fasta.clstr95.clstr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/kpc/uba/db/uba.pin" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/kpc/uba/db/uba.pin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/mcr/canon_prev_nrdb_uba.fasta.aln.trim.fast.tree" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/mcr/canon_prev_nrdb_uba.fasta.aln.trim.fast.tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/mcr/canon_prev_nrdb_uba.fasta.aln.trim.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/mcr/canon_prev_nrdb_uba.fasta.aln.trim.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/mcr/canon_prev_nrdb_uba.fasta.aln.trim.model.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/mcr/canon_prev_nrdb_uba.fasta.aln.trim.model.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/nrdb/results.blast.map.fasta.aln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/nrdb/results.blast.map.fasta.aln.trim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/nrdb/results.blast.map.fasta.aln.trim.fast.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/prevalence/db/prev.pin" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/ndm/prevalence/db/prev.pin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/prevalence/results.blast.map.fasta.clstr100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/prevalence/results.blast.map.fasta.clstr100.aln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/prevalence/results.blast.map.fasta.clstr100.aln.trim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/prevalence/results.blast.map.fasta.clstr100.aln.trim.fast.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/prevalence/results.blast.map.fasta.clstr100.clstr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/ndm/uba/db/uba.pin" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/ndm/uba/db/uba.pin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/oxa/canon/results.fasta.aln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/oxa/canon_uba.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/oxa/canon_uba.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/oxa/canon_uba.fasta.aln" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/oxa/canon_uba.fasta.aln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/oxa/uba/db/uba.pin" beforeDir="false" afterPath="$PROJECT_DIR$/src/output_dir/oxa/uba/db/uba.pin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/oxa/uba/result.blast.map.fasta.aln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/oxa/uba/result.blast.map.fasta.aln.trim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output_dir/oxa/uba/result.blast.map.fasta.aln.trim.fast.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oxa.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/oxa.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,30 +58,12 @@
     <favorites_list name="amr_uba" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mcr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/functions/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="530">
+              <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -62,17 +71,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/functions/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+            <state relative-caret-position="170">
+              <caret line="373" column="9" selection-start-line="373" selection-start-column="9" selection-end-line="373" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ndm.py">
+        <entry file="file://$PROJECT_DIR$/src/scripts/general/blast_to_fasta.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="53" column="79" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
+            <state relative-caret-position="180">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mcr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mcr2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/output_dir/mcr2/canon_prev_nrdb_uba.fasta.aln.trim.fast.tree">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kpc_new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -87,19 +143,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oxa.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="45" column="20" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kpc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="53" column="77" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
+            <state relative-caret-position="990">
+              <caret line="67" column="2" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -118,10 +165,32 @@
       <find>.scrip</find>
       <find>./functions</find>
       <find>clus</find>
-      <find>tmp</find>
       <find>kpc</find>
       <find>mcr</find>
+      <find>ndm</find>
+      <find>tmp</find>
+      <find>update</find>
+      <find>write_ti</find>
       <find>blastp</find>
+      <find>iqtree</find>
+      <find>annot</find>
+      <find>nrdb</find>
+      <find>print(</find>
+      <find>feature</find>
+      <find>prin</find>
+      <find>prev</find>
+      <find>get_pre</find>
+      <find>i</find>
+      <find>get_prev</find>
+      <find>get_canon</find>
+      <find>joce</find>
+      <find>uba</find>
+      <find>making uba</find>
+      <find>make_u</find>
+      <find>making fasta</find>
+      <find>making fast</find>
+      <find>print</find>
+      <find>db</find>
     </findStrings>
     <replaceStrings>
       <replace>./src/functions</replace>
@@ -138,11 +207,14 @@
         <option value="$PROJECT_DIR$/src/commands/__init__.py" />
         <option value="$PROJECT_DIR$/src/functions/__init__.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
-        <option value="$PROJECT_DIR$/src/mcr.py" />
-        <option value="$PROJECT_DIR$/src/oxa.py" />
-        <option value="$PROJECT_DIR$/src/functions/functions.py" />
-        <option value="$PROJECT_DIR$/src/ndm.py" />
         <option value="$PROJECT_DIR$/src/kpc.py" />
+        <option value="$PROJECT_DIR$/src/ndm.py" />
+        <option value="$PROJECT_DIR$/src/kpc_new.py" />
+        <option value="$PROJECT_DIR$/src/oxa.py" />
+        <option value="$PROJECT_DIR$/src/mcr.py" />
+        <option value="$PROJECT_DIR$/src/mcr2.py" />
+        <option value="$PROJECT_DIR$/src/functions/functions.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -158,9 +230,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
-    <option name="y" value="339" />
+    <option name="y" value="-17" />
     <option name="width" value="1920" />
-    <option name="height" value="741" />
+    <option name="height" value="881" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -170,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,57 +255,24 @@
               <item name="amr_uba" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="amr_uba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amr_uba" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amr_uba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amr_uba" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amr_uba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amr_uba" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="canon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amr_uba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amr_uba" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="general" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amr_uba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amr_uba" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="nrdb" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/functions" />
       <recent name="$PROJECT_DIR$/src/commands" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -339,32 +379,58 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="339" width="1920" height="741" extended-state="0" />
+    <frame x="1920" y="-17" width="1920" height="881" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" sideWeight="0.5019084" side_tool="true" weight="0.2045929" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.10218978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49861497" visible="true" weight="0.26989985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50138503" side_tool="true" weight="0.10218978" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32902467" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41010576" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40885416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/functions/functions.py</url>
+          <line>515</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/functions/functions.py</url>
+          <line>514</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/functions/functions.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py" />
     <entry file="file://$PROJECT_DIR$/src/functions/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -372,24 +438,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.py">
+    <entry file="file://$PROJECT_DIR$/src/ndm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mcr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        <state relative-caret-position="1155">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/oxa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="20" />
+        <state relative-caret-position="480">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kpc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="67" column="2" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -400,24 +473,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/kpc_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output_dir/mcr2/canon_prev_nrdb_uba.fasta.aln.trim.fast.tree">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/general/blast_to_fasta.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/functions/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+        <state relative-caret-position="170">
+          <caret line="373" column="9" selection-start-line="373" selection-start-column="9" selection-end-line="373" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ndm.py">
+    <entry file="file://$PROJECT_DIR$/src/mcr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="53" column="79" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
+        <state relative-caret-position="975">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kpc.py">
+    <entry file="file://$PROJECT_DIR$/src/mcr2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="53" column="77" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
+        <state relative-caret-position="556">
+          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
