@@ -1,6 +1,5 @@
 #!/bin/bash
 #
-#
 # create headers for a fasta file with indicies which correspond to metadata
 # generated in another file
 #

@@ -92,7 +92,7 @@ def run_all():
     #print(functions.get_canon_lineage(functions.select_id_from_table('./output_dir/sqlite_metatdata', 'mcr_canon', '2')))
 
     #print("wfwefewfew" + str(functions.read_file(iqtree)))
-    tree=functions.ete_treeify(functions.car(functions.read_file(iqtree)))
+    tree=functions.ete_newick_to_tree(functions.car(functions.read_file(iqtree)))
 
     tree2 = functions.annotate(tree, 'mcr' ,'./output_dir/sqlite_metatdata')
     functions.render(tree2)
