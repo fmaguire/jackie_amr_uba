@@ -105,6 +105,7 @@ def select_prev_id(db_file, table_name, id_num):
         print(e)
     finally:
         conn.close()
+
 def annotate(tree, determinant_string, db_file):
     nst1 = NodeStyle()
     nst1["hz_line_color"] = "LightSteelBlue"
@@ -122,7 +123,7 @@ def annotate(tree, determinant_string, db_file):
         nst1["hz_line_color"] = "LightSteelBlue"
         nst1["vt_line_color"] = "LightSteelBlue"
         node.set_style(nst1)
-        print(node.name.split('_'))
+        #print(node.name.split('_'))
         if node.is_leaf():
             label_arr = node.name.split('_')
             if (label_arr[1]) == 'nrdb':
@@ -170,29 +171,38 @@ def annotate(tree, determinant_string, db_file):
                                 inplace=True)
                 uba = metadata.loc[metadata.UBAGenomeID == ubaName]
                 ubaList = uba.values.tolist()
-                ubaList = ubaList[0]
-                #print(ubaList[6].rsplit(' ', 1)[0])
+                print(ubaList)
+                ubaList = ubaList[0][6]
+                ubaList = re.sub('\[.*\]', '', ubaList)
+                ubaList = re.sub('UBA[0-9]*', '', ubaList)
+                ubaList = re.sub('UBP[0-9]*', '', ubaList)
+                ubaList = re.sub('bacterium', '', ubaList)
+                ubaList = re.sub('Candidatus', '', ubaList)
+                ubaList = re.sub(' +',' ',ubaList)
+                #ubaList = ubaList.join(ubaList.split())
+                print(ubaList.rsplit(' ', 1)[0])
+                result = ubaList.rsplit(' ', 1)[0].strip()
+                if len(result) is not 0:
+                    tax_id = ncbi.get_name_translator([result])[result]
+                    print(result)
+                    print(tax_id)
+                    lineage = ncbi.get_lineage(tax_id[0])
+                    names = ncbi.get_taxid_translator(lineage)
+                    rank = ncbi.get_rank(lineage)
 
-                result = ubaList[6].rsplit(' ', 1)[0]
-                tax_id = ncbi.get_name_translator([result])[result]
-                #print(tax_id)
-                lineage = ncbi.get_lineage(tax_id[0])
-                names = ncbi.get_taxid_translator(lineage)
-                rank = ncbi.get_rank(lineage)
-
-                for pair in list(map(lambda x: (rank[x], names[x]), lineage))[2:]:
-                    node.add_feature(pair[0].replace(" ", "_"), pair[1])
-                feature_to_face('superkingdom', node, 1, colors[1])
-                feature_to_face('phylum', node, 2, colors[1])
-                feature_to_face('class', node, 3,colors[1])
-                feature_to_face('order', node, 4,colors[1])
-                feature_to_face('family', node, 5,colors[1])
-                feature_to_face('species', node, 6,colors[1])
-                feature_to_face('no_rank', node, 7,colors[1])
-                feature_to_face('extra', node, 8, colors[1])
-                #nst2 = NodeStyle()
-                #nst2["bgcolor"] = "Moccasin"
-                #node.set_style(nst2)
+                    for pair in list(map(lambda x: (rank[x], names[x]), lineage))[2:]:
+                        node.add_feature(pair[0].replace(" ", "_"), pair[1])
+                    feature_to_face('superkingdom', node, 1, colors[1])
+                    feature_to_face('phylum', node, 2, colors[1])
+                    feature_to_face('class', node, 3,colors[1])
+                    feature_to_face('order', node, 4,colors[1])
+                    feature_to_face('family', node, 5,colors[1])
+                    feature_to_face('species', node, 6,colors[1])
+                    feature_to_face('no_rank', node, 7,colors[1])
+                    feature_to_face('extra', node, 8, colors[1])
+                    #nst2 = NodeStyle()
+                    #nst2["bgcolor"] = "Moccasin"
+                    #node.set_style(nst2)
 
             elif (label_arr[1]) == 'canon':
                 N = AttrFace("name", fsize=12)
@@ -236,7 +246,7 @@ def annotate(tree, determinant_string, db_file):
                     tax_id = ncbi.get_name_translator([result[0]])[result[0]]
 
                     tax_ids.append(str(tax_id[0]))
-                print(tax_ids)
+                #print(tax_ids)
 
 
                 try:
@@ -278,8 +288,8 @@ def annotate(tree, determinant_string, db_file):
                     feature_to_face('species', node, 6, colors[3])
                     feature_to_face('no_rank', node, 7, colors[3])
                     feature_to_face('extra', node, 8, colors[3])
-        else:
-            print('root')
+       # else:
+            #print('root')
         #tree.set_outgroup('lcl|root|1')
 
         #for node in tree.get_descendants():
@@ -303,7 +313,7 @@ def render(tree, name):
                                                   'no_rank'])
     tree_style.optimal_scale_level = "full"
     tree_style.scale = 1000
-    tree.show_branch_support = True
+    tree_style.show_branch_support = True
 
     write_file(new_tree_str, name + '.ete.tree')
     tree.render(name, tree_style=tree_style)
@@ -563,8 +573,8 @@ def run_fasttree(file_name):
     return run_conditional(command, run_msg, destination_file, exists, True)
 
 
-def run_iqtree(file_name):
-    command = ['iqtree', '-s', file_name.file_name]
+def run_iqtree(file_name, model):
+    command = ['iqtree', '-s', file_name.file_name, '-bb', '1000', '-m', model]
     run_msg = 'running iqtree'
     exists = os.path.isfile(file_name.file_name + '.treefile')
     return run_conditional(command, run_msg, file_name.file_name
