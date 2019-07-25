@@ -6,7 +6,7 @@ out_group_file = '/home/jax/focal/data/analyses/metagenome/raw/root.fasta'
 ref_sequence_path = test_dir + 'canonical/mcr.fasta'
 prev_path = test_dir \
             + 'prevalence/protein_fasta_protein_homolog_model_variants.fasta'
-output_dir='../output/mcr3_full/'
+output_dir='../output/mcr3/'
 final_name = 'canon_prev_nrdb_uba.fasta'
 def run_all():
 

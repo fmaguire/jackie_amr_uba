@@ -6,7 +6,7 @@ test_dir = '/home/jax/focal/data/analyses/metagenome/raw/'
 ref_sequence_path = test_dir + 'canonical/kpc.fasta'
 prev_path = test_dir \
             + 'prevalence/protein_fasta_protein_homolog_model_variants.fasta'
-output_dir='../output/kpc_full/'
+output_dir='../output/kpc/'
 final_name = 'canon_prev_nrdb_uba.fasta'
 def run_all():
 
